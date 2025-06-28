@@ -1,0 +1,13 @@
+[user]
+	email = 116189751+sharifmdathar@users.noreply.github.com
+	name = sharifmdathar
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
