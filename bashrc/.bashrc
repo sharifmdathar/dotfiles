@@ -17,3 +17,4 @@ alias gp="git push"
 
 PS1='\[\e[36m\]\W \[\e[33m\]\$ \[\e[0m\]'
 export LC_ALL="en_US.UTF-8"
+alias code="code --ozone-platform=wayland"

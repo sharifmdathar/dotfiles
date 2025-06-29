@@ -257,7 +257,8 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-at-startup "xwayland-satellite"
+// spawn-at-startup "xwayland-satellite"
+
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -347,7 +348,7 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+E hotkey-overlay-title="Run an Application: pcmanfm" { spawn "pcmanfm"; }
     Mod+W hotkey-overlay-title="Launch Web Browser" { spawn "thorium-browser-avx2"; }
-    Mod+X hotkey-overlay-title="Launch Logout Script" { spawn "wleave"; }
+    Mod+X hotkey-overlay-title="Launch Logout Script" { spawn "~/.config/niri/fuzzel-powermenu.sh";}
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
