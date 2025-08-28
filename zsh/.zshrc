@@ -14,11 +14,19 @@ alias nano=nvim
 alias vi=nvim
 alias vim=nvim
 alias grep=rg
+alias python=python3
 
+select-word-style bash
 autoload -U colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz select-word-style
-select-word-style bash
+fzf-history-widget() {
+    local selected_command
+    selected_command=$(fc -l -n -100 | fzf --tac)
+    LBUFFER+="$selected_command"
+}
+bindkey '^R' fzf-history-widget
+
 
 # ==========================
 # Keyboard Shortcuts / Bindings
@@ -40,8 +48,6 @@ bindkey '^K' kill-line                   # Ctrl + K → Delete to end of line
 bindkey '^U' backward-kill-line          # Ctrl + U → Delete whole line
 bindkey '^Y' yank                        # Ctrl + Y → Paste last killed text
 
-bindkey '^R' history-incremental-search-backward   # Ctrl + R → Search backward
-
 alias ip='ip --color=auto'
 
 export EDITOR="nvim"
@@ -60,3 +66,5 @@ alias ...='cd ../..'
 setopt AUTO_CD
 setopt CORRECT
 setopt NO_BEEP
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
