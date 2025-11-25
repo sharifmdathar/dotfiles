@@ -1,0 +1,262 @@
+set $mod Mod4
+font pango:Hack 9
+floating_modifier $mod
+
+# focus wrapping (prevents focus from getting stuck)
+focus_wrapping yes
+
+# mouse warping (optional - uncomment if you want mouse to follow focus)
+# mouse_warping output
+
+# start a terminal
+set $term alacritty
+bindsym $mod+Return exec $term
+
+# kill focused window
+bindsym $mod+q kill
+
+# start dmenu (a program launcher)
+#bindsym ctrl+space exec rofi -show run
+bindsym $mod+space exec "~/.config/polybar/forest/scripts/launcher.sh &"
+#bindsym ctrl+space exec dmenu_run
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+bindsym $mod+t split toggle
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+w sticky toggle
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+ctrl+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus child container
+bindsym $mod+d focus child
+
+# workspace back_and_forth (switch to previously focused workspace)
+bindsym $mod+Tab workspace back_and_forth
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# scratchpad (hidden window for temporary use)
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+#
+# Status Bar:
+#
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh --forest
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #000000 #000000 #ffffff #000000   #000000
+client.focused_inactive #000000 #000000 #ffffff #000000   #000000
+client.unfocused        #000000 #000000 #888888 #000000   #000000
+client.urgent           #000000 #000000 #ffffff #000000   #000000
+client.placeholder      #000000 #000000 #ffffff #000000   #000000
+client.background       #ffffff
+
+########################################################################
+########################################################################
+####
+####                   Workplaces layout
+####
+########################################################################
+########################################################################
+
+exec --no-startup-id "i3-msg 'workspace 1; exec helium-browser'"
+
+########################################################################
+########################################################################
+####
+####                   Floated windows
+####
+########################################################################
+########################################################################
+
+for_window [title="Calculator"] floating enable
+for_window [title="Timer"] floating enable
+for_window [class="^.*"] border pixel 1
+for_window [class="librewolf"] border none
+for_window [class="firefox"] border none
+for_window [class="mpv"] floating enable
+for_window [class="imv"] floating enable
+for_window [class="zenity"] floating enable
+for_window [class="cachyos-welcome"] floating enable
+
+
+########################################################################
+########################################################################
+####
+####                   HOTKEYS
+####
+########################################################################
+########################################################################
+
+
+# Volume controls (using pamixer consistently)
+bindsym XF86AudioRaiseVolume exec "pamixer -ui 3 && pamixer --get-volume > /tmp/xobpipe"
+bindsym XF86AudioLowerVolume exec "pamixer -ud 3 && pamixer --get-volume > /tmp/xobpipe"
+bindsym XF86AudioMute exec "pamixer -t && sh -c 'if pamixer --get-mute | grep -q true; then echo 0; else pamixer --get-volume; fi' > /tmp/xobpipe"
+
+bindsym $mod+Shift+p exec gnome-calculator
+#bindsym $mod+p exec ~/.scripts/dmshot
+
+## This will switch the current layout to the 'us'.
+#bindsym $mod+l exec "setxkbmap -layout us && sleep 0.1 && setxkbmap -option grp:caps_toggle 'us,ru' -option grp_led:caps && sleep 0.1 && i3lock --blur 5"
+
+## This keybind will lock the screen. The lockscreen.
+bindsym $mod+l exec "i3lock -n --indicator --clock --inside-color=ffffff"
+
+########################################################################
+########################################################################
+####
+####                   AUTOLOAD
+####
+########################################################################
+########################################################################
+
+# Enable numlock on startup
+exec --no-startup-id numlockx on
+
+## Here is a language switcher by pressing capslock button,
+## and the capslock functionality available by using shift+capslock.
+## Uncomment to enable 'us' to/from 'ru' switch. change to language(s) you prefer more.
+
+#exec_always setxkbmap -option grp:caps_toggle "us,ru" -option "grp:caps_toggle,grp_led:caps"
+
+#exec xrandr --output HDMI-1 --mode 1920x1080 --rate 60 --scale 1x1
+exec --no-startup-id autorandr -c
+#exec xrandr --auto --output HDMI-1 --mode 1920x1080 --above HDMI-2
+
+exec feh --bg-fill ~/.config/i3/wallpaper.png
+
+exec --no-startup-id dunst
+exec --no-startup-id picom
+exec --no-startup-id redshift
+exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Create xob pipe if it doesn't exist
+exec_always --no-startup-id sh -c "mkfifo /tmp/xobpipe 2>/dev/null || true"
+
+# Start xob volume indicator (background process)
+exec --no-startup-id sh -c "nohup tail -f /tmp/xobpipe | xob -t 2170 > /dev/null 2>&1 &"
+#exec ~/.i3/launch.sh
+bindsym $mod+b exec helium-browser
+bindsym $mod+x exec "~/.config/polybar/forest/scripts/powermenu.sh &"
+bindsym $mod+shift+f exec thunar
+bindsym XF86MonBrightnessUp exec "brightnessctl set +1% && ~/.local/bin/brightness-percentage > /tmp/xobpipe"
+bindsym XF86MonBrightnessDown exec "brightnessctl set 1%- && ~/.local/bin/brightness-percentage > /tmp/xobpipe"
+
+# Keyboard backlight controls
+bindsym XF86KbdBrightnessUp exec --no-startup-id ~/.local/bin/kbd-backlight up
+bindsym XF86KbdBrightnessDown exec --no-startup-id ~/.local/bin/kbd-backlight down
+bindsym XF86KbdLightOnOff exec --no-startup-id ~/.local/bin/kbd-backlight toggle
+exec --no-startup-id xss-lock -- i3lock -n --indicator --clock --inside-color=ffffff
+exec --no-startup-id xset s 300
+exec --no-startup-id xset dpms 360 360 360
+exec --no-startup-id cliphist store &
+exec --no-startup-id udiskie &
+
+#
+# Screenshot directory
+set $ssdir ~/Pictures/Screenshots
+
+# Region screenshot
+bindsym Print exec --no-startup-id sh -c 'maim -s | xclip -selection clipboard -t image/png && notify-send \"📸 Screenshot\" \"Region copied to clipboard\"'
+
+# Full screen screenshot
+bindsym Shift+Print exec --no-startup-id sh -c 'maim | xclip -selection clipboard -t image/png && notify-send \"📸 Screenshot\" \"Full screen copied to clipboard\"'
+
+# Active window screenshot
+bindsym $mod+Print exec --no-startup-id sh -c \"maim -i \$(xdotool getactivewindow) | xclip -selection clipboard -t image/png && notify-send '📸 Screenshot' 'Active window copied to clipboard'\"
+
