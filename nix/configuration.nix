@@ -27,7 +27,7 @@
     ];
     consoleLogLevel = 0;
     initrd.verbose = false;
-    extraModulePackages = [ (pkgs.callPackage ./clevo-keyboard.nix { linuxPackages = pkgs.linuxPackages_latest; }) ];
+    extraModulePackages = [ config.boot.kernelPackages.tuxedo-keyboard ];
     kernelModules = [ "tuxedo_keyboard" ];
     extraModprobeConfig = ''
       options tuxedo_keyboard color=WHITE
@@ -79,6 +79,7 @@
       adwaita-icon-theme
       brightnessctl
       cliphist
+      firefox
       gnome-themes-extra
       hyprland
       hyprpolkitagent
