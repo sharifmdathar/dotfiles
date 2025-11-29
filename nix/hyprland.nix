@@ -16,7 +16,6 @@ in
   programs.hyprlock = {
     enable = true;
     settings = {
-      background.path = "~/Pictures/bkg4.png";
       "input-field" = {
         size = "200, 50";
         position = "0, -50";
@@ -51,15 +50,6 @@ in
     };
   };
 
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      ipc = "off";
-      preload = [ "${config.home.homeDirectory}/Pictures/bkg4.png" ];
-      wallpaper = [ ",${config.home.homeDirectory}/Pictures/bkg4.png" ];
-    };
-  };  
-
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -69,8 +59,6 @@ in
         gaps_in = 5;
         gaps_out = 10;
         border_size = 2;
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
         resize_on_border = false;
         allow_tearing = false;
         layout = "dwindle";
@@ -84,7 +72,6 @@ in
           enabled = true;
           range = 4;
           render_power = 3;
-          color = "rgba(1a1a1aee)";
         };
         blur = {
           enabled = true;
