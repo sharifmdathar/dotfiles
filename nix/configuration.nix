@@ -94,7 +94,7 @@
       xdg-utils
       xfce.thunar
     ];
-    variables.GTK_THEME = "Adwaita:dark";
+
   };
 
   time.timeZone = "Asia/Kolkata";

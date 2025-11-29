@@ -2,6 +2,14 @@
 
 let
   mainMod = "SUPER";
+  toggleKbdScript = pkgs.writeShellScriptBin "toggle-kbd-script" ''
+    current_brightness=$(${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' get)
+    if [ "$current_brightness" -eq 0 ]; then
+      ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 50%
+    else
+      ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 0%
+    fi
+  '';
 in
 
 {
@@ -190,6 +198,9 @@ in
         ", XF86AudioMute, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume mute-toggle"
         ", XF86MonBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --brightness +5"
         ", XF86MonBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --brightness -5"
+        ", XF86KbdBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set +5%"
+        ", XF86KbdBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 5%-"
+        ", XF86KbdLightOnOff, exec, ${toggleKbdScript}/bin/toggle-kbd-script"
         ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
         ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"
         ", XF86AudioPlay, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
