@@ -1,21 +1,10 @@
-{ pkgs, config, ... }:
+{ pkgs, config, inputs, unstablePkgs, ... }:
 
-let
-  home-manager = builtins.fetchTarball {
-    url = "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
-  };
-  unstablePkgsTarball = fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz";
-  };
-  unstablePkgs = import unstablePkgsTarball { config.allowUnfree = true; };
-in
 {
-  imports = [ <home-manager/nixos> ];
-
   home-manager = {
     backupFileExtension = "backup";
 
-    users.blazen = { pkgs, ... }: {   # <<< CHANGE THIS
+    users.blazen = { pkgs, ... }: {
       nixpkgs.config.allowUnfree = true;
 
       imports = [
