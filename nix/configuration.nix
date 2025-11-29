@@ -17,7 +17,7 @@
       timeout = 1;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    resumeDevice = "/dev/disk/by-uuid/d57a97f3-74e3-4f19-8e4b-40f951fdf610";
+    # resumeDevice = "/dev/disk/by-uuid/d57a97f3-74e3-4f19-8e4b-40f951fdf610";
     kernelParams = [
       "quiet"
       "splash"
@@ -28,6 +28,11 @@
     ];
     consoleLogLevel = 0;
     initrd.verbose = false;
+    extraModulePackages = [ (pkgs.callPackage ./clevo-keyboard.nix { linuxPackages = pkgs.linuxPackages_latest; }) ];
+    kernelModules = [ "tuxedo_keyboard" ];
+    extraModprobeConfig = ''
+      options tuxedo_keyboard color=WHITE
+    '';
   };
 
   networking = {
@@ -84,7 +89,6 @@
       pavucontrol
       udiskie
       waybar
-      firefox
       wl-clipboard
       wofi
       xdg-utils
@@ -110,7 +114,6 @@
   };
 
   services = {
-    cloudflare-warp.enable = true;
     create_ap = {
       enable = false;
       settings = {
