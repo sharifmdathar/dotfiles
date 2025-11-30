@@ -67,7 +67,7 @@ in
       decoration = {
         rounding = 10;
         active_opacity = 1.0;
-        inactive_opacity = 1.0;
+        inactive_opacity = 0.8;
         shadow = {
           enabled = true;
           range = 4;
@@ -183,10 +183,10 @@ in
         ", XF86AudioRaiseVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume raise"
         ", XF86AudioLowerVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume lower"
         ", XF86AudioMute, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume mute-toggle"
-        ", XF86MonBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --brightness +5"
-        ", XF86MonBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --brightness -5"
-        ", XF86KbdBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set +5%"
-        ", XF86KbdBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 5%-"
+        ", XF86MonBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='intel_backlight' --brightness +1"
+        ", XF86MonBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client  --device='intel_backlight' --brightness -1"
+        ", XF86KbdBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness +5"
+        ", XF86KbdBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness -5"
         ", XF86KbdLightOnOff, exec, ${toggleKbdScript}/bin/toggle-kbd-script"
         ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
         ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"

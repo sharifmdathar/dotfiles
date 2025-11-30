@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs.mpv = {
@@ -48,9 +48,9 @@
       osd-bar-align-y=-1;
       osd-bar-h=2;
       osd-bar-w=99;
-      osd-border-color="#DD322640";
+      # osd-border-color=lib.mkForce "#DD322640";  # Override stylix
       osd-border-size=2;
-      osd-color="#FFFFFFFF";
+      # osd-color="#FFFFFFFF";
       osd-duration=1000;
       osd-font-size=32;
       osd-status-msg="\${time-pos} / \${duration}\${?percent-pos:  (\${percent-pos}%)}\${?frame-drop-count:\${!frame-drop-count==0:  Dropped: \${frame-drop-count}}}\\n\${?chapter:Chapter: \${chapter}}";
@@ -80,7 +80,7 @@
       ];
       sub-fix-timing=false;
       sub-font-size="45";
-      sub-font="Arial";
+      # sub-font="Arial";
       sub-scale-with-window=true;
       glsl-shaders-clr = true;
 

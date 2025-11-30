@@ -27,16 +27,24 @@ This is a summary of the tasks completed and the current context of our software
     *   Unified desktop environment theming (Hyprland, Waybar, SwayNC, GTK, Alacritty) using `stylix`.
     *   Removed manual configuration/styling from `home.nix`, `hyprland.nix`, `waybar.nix`, and `swaync.nix` to allow Stylix to take over.
     *   Added `wallpaper.jpg` to the git repository to be accessible by the Flake.
+    *   Resolved an issue where `home.nix` was not being imported by the Flake, ensuring Home Manager changes are correctly applied.
+    *   Fixed a configuration error in `hyprland.nix` where `services.hypridle` was duplicated.
+    *   Disabled `stylix.targets.mako` to avoid deprecated option errors.
+*   **Shell Customization:**
+    *   Enabled `programs.zsh` in `home.nix` to allow Home Manager to manage user shell configuration.
+    *   This activates the previously configured `starship` integration, ensuring the custom prompt is displayed.
 
 ## Current State:
 
 *   The system is running NixOS 25.05 with a unified Stylix theme derived from `wallpaper.jpg`.
-*   All manual color hardcoding has been removed from key config files.
-*   Git repository is dirty and needs a commit to save the stable state.
+*   All applications (Hyprland, Waybar, SwayNC, etc.) are correctly picking up the generated theme.
+*   `zsh` is now managed by Home Manager for the user 'blazen', enabling Starship prompt.
+*   `home.nix` is now properly linked in `flake.nix`.
+*   All changes have been committed to the Git repository.
 
 ## Next Pending Task:
 
-*   **Verification:** Verify that the new theme looks correct and that all applications (especially Waybar and SwayNC) are displaying properly.
+*   None immediately pending. The system is stable and themed.
 
 ---
 

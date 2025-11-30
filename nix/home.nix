@@ -1,8 +1,6 @@
 { pkgs, config, inputs, unstablePkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
-
   imports = [
     ./hyprland.nix
     ./waybar.nix
@@ -11,23 +9,47 @@
   ];
 
   home.packages = with pkgs; [
+    # User applications
     _64gram
+    firefox
+    google-chrome
+    libreoffice-qt6-fresh
+    motrix
+    viewnior
+    zapzap
+
+    # Development tools
+    unstablePkgs.android-studio
+    unstablePkgs.vscode
+    unstablePkgs.unityhub
+    arduino-ide
+    gcc
+    gnumake
+    neovim
+    nodejs_24
+    pnpm
+
+    # Terminal utilities
     bluetuith
     fastfetch
-    neovim
-    pnpm
     ranger
     ripgrep
     swaynotificationcenter
     swayosd
+    unstablePkgs.gemini-cli
+    wget
+
+    # File management & archives
+    p7zip
     unzip
     unrar
-    unstablePkgs.vscode
-    unstablePkgs.android-studio
-    viewnior
-    wget
-    zapzap
+    xfce.thunar
 
+    # Desktop utilities
+    pavucontrol
+    wofi
+
+    # Fonts
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
@@ -66,6 +88,13 @@
           format = "[$symbol$state]($style) ";
         };
       };
+    };
+
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
     };
   };
 

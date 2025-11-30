@@ -105,23 +105,22 @@
   environment = {
     etc."greetd/environments".text = "Hyprland";
     systemPackages = with pkgs; [
+      # System-level theming & core utilities
       adwaita-icon-theme
-      brightnessctl
-      cliphist
-      firefox
       gnome-themes-extra
+      xdg-utils
+      
+      # Hyprland ecosystem (system-level)
       hyprland
       hyprpolkitagent
-      hyprshot
-      nodejs_24
-      p7zip
-      pavucontrol
-      udiskie
       waybar
+      brightnessctl
+      cliphist
+      hyprshot
       wl-clipboard
-      wofi
-      xdg-utils
-      xfce.thunar
+      
+      # System utilities
+      udiskie
     ];
 
   };
