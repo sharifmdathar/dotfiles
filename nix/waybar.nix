@@ -1,5 +1,21 @@
 { config, pkgs, ... }:
 
+let
+  caffeineStatus = pkgs.writeShellScript "caffeine-status" ''
+    if systemctl --user is-active --quiet caffeine; then
+      printf '%s\n' '{"text":"☕ Caffeine","class":"on","tooltip":"Screen sleep inhibited"}'
+    else
+      printf '%s\n' '{"text":"☕ off","class":"off","tooltip":"Click to keep screen awake"}'
+    fi
+  '';
+  caffeineToggle = pkgs.writeShellScript "caffeine-toggle" ''
+    if systemctl --user is-active --quiet caffeine; then
+      systemctl --user stop caffeine
+    else
+      systemctl --user start caffeine
+    fi
+  '';
+in
 {
   programs.waybar = {
     enable = true;
@@ -7,7 +23,7 @@
       mainBar = {
         position = "top";
         modules-left = [ "hyprland/workspaces" "memory" "cpu" ];
-        modules-center = [ "clock" "hyprland/window" ]; 
+        modules-center = [ "custom/caffeine" "clock" "hyprland/window" ]; 
         modules-right = [
           "tray"
           "bluetooth"
@@ -68,6 +84,15 @@
           tooltip-format = "{:%B %Y}";
         };
 
+        "custom/caffeine" = {
+          return-type = "json";
+          interval = 3;
+          exec = "${caffeineStatus}";
+          on-click = "${caffeineToggle}";
+          on-click-right = "systemctl --user stop caffeine";
+          tooltip = true;
+        };
+
         "battery" = {
           states = {
             warning = 30;
@@ -104,5 +129,29 @@
         };
       };
     };
+    style = ''
+      /* Make caffeine indicator prominent in the center */
+      #custom-caffeine.on {
+        color: #ffcc00;
+        font-weight: 700;
+      }
+      #custom-caffeine.off {
+        color: #888888;
+        font-weight: 600;
+      }
+      /* Make clock bold for better visibility */
+      #clock {
+        font-weight: 700;
+      }
+      /* Add spacing/padding to power and notifications icons */
+      #custom-power {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      #custom-notifications {
+        padding-left: 12px;
+        padding-right: 8px;
+      }
+    '';
   };
 }

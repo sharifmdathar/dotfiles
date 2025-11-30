@@ -61,6 +61,7 @@
     extraModprobeConfig = ''
       options tuxedo_keyboard color=WHITE
     '';
+    supportedFilesystems = [ "ntfs" ];
   };
 
   networking = {
@@ -109,7 +110,7 @@
       adwaita-icon-theme
       gnome-themes-extra
       xdg-utils
-      
+
       # Hyprland ecosystem (system-level)
       hyprland
       hyprpolkitagent
@@ -118,9 +119,10 @@
       cliphist
       hyprshot
       wl-clipboard
-      
+
       # System utilities
       udiskie
+      ntfs3g
     ];
 
   };

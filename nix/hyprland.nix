@@ -10,6 +10,15 @@ let
       ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 0%
     fi
   '';
+  toggleCaffeineScript = pkgs.writeShellScriptBin "toggle-caffeine" ''
+    if systemctl --user is-active --quiet caffeine; then
+      systemctl --user stop caffeine
+      ${pkgs.libnotify}/bin/notify-send -i dialog-information "Caffeine" "Disabled. Screen can sleep."
+    else
+      systemctl --user start caffeine
+      ${pkgs.libnotify}/bin/notify-send -i dialog-information "Caffeine" "Enabled. Screen will stay awake."
+    fi
+  '';
 in
 
 {
@@ -30,6 +39,7 @@ in
         lock_cmd = "pidof hyprlock || hyprlock";
         before_sleep_cmd = "loginctl lock-session";
         after_sleep_cmd = "hyprctl dispatch dpms on";
+        ignore_dbus_inhibit = false;
       };
 
       listener = [
@@ -53,7 +63,10 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      monitor = [",preferred,auto,1"];
+      monitor = [
+        "eDP-1,1920x1080@60,0x0,1"
+        ",preferred,auto,1"
+      ];
       xwayland.force_zero_scaling = true;
       general = {
         gaps_in = 5;
@@ -151,6 +164,7 @@ in
         "${mainMod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.wofi}/bin/wofi --dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
         "${mainMod}, L, exec, hyprlock"
         "${mainMod}, C, exec, code"
+        "${mainMod}, T, exec, ${toggleCaffeineScript}/bin/toggle-caffeine"
         ",print, exec, ${pkgs.hyprshot}/bin/hyprshot -m output -m eDP-1"
         "shift,print, exec, ${pkgs.hyprshot}/bin/hyprshot -m region"
         "${mainMod},print, exec, ${pkgs.hyprshot}/bin/hyprshot -m window"

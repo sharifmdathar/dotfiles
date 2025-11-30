@@ -21,6 +21,7 @@
     # Development tools
     unstablePkgs.android-studio
     unstablePkgs.vscode
+    unstablePkgs.code-cursor
     unstablePkgs.unityhub
     arduino-ide
     gcc
@@ -48,12 +49,26 @@
     # Desktop utilities
     pavucontrol
     wofi
+    libnotify
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
   fonts.fontconfig.enable = true;
+
+  systemd.user.services.caffeine = {
+    Unit = {
+      Description = "Keep the session awake (inhibit idle/sleep)";
+    };
+    Service = {
+      Type = "simple";
+      ExecStart = ''${pkgs.systemd}/bin/systemd-inhibit --what=idle:sleep --mode=block --why=Caffeine ${pkgs.coreutils}/bin/sleep infinity'';
+    };
+    Install = {
+      WantedBy = [ ];
+    };
+  };
 
   programs = {
     alacritty = {

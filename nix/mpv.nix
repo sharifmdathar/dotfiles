@@ -1,5 +1,28 @@
 { config, pkgs, lib, ... }:
 
+let
+  ssimDownscaler = pkgs.fetchurl {
+    url = "https://gist.githubusercontent.com/igv/36508af3ffc84410fe39761d6969be10/raw/SSimDownscaler.glsl";
+    sha256 = "017q51w0gi58y9myyz70gd6w1c480mhxhbnqp5c71lb2l484fvzl";
+  };
+  ssimSuperRes = pkgs.fetchurl {
+    url = "https://gist.githubusercontent.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b/raw/SSimSuperRes.glsl";
+    sha256 = "03s62mwcj90pnpp7dmwa4lbh404805g3f6s1a1908q0chhap3cm8";
+  };
+  krigBilateral = pkgs.fetchurl {
+    url = "https://gist.githubusercontent.com/igv/a015fc885d5c22e6891820ad89555637/raw/KrigBilateral.glsl";
+    sha256 = "1c0cjjysi9gmqy7nwj5ywc39hk6ivxfrhw8drrpn90vvnymrhiwa";
+  };
+  nvScaler = pkgs.fetchurl {
+    url = "https://gist.githubusercontent.com/agyild/7e8951915b2bf24526a9343d951db214/raw/NVScaler.glsl";
+    sha256 = "0g5psv5k1sdwjlppdajjpnz5prjpqair8xyrvbj75lh807n7iixs";
+  };
+  nvSharpen = pkgs.fetchurl {
+    url = "https://gist.githubusercontent.com/agyild/7e8951915b2bf24526a9343d951db214/raw/NVSharpen.glsl";
+    sha256 = "04ls9zsqj601x0r6nklj173c1sl3wwcs0ikyyz0q90m1klmaql9x";
+  };
+in
+
 {
   programs.mpv = {
     enable = true;
@@ -86,30 +109,21 @@
 
       linear-downscaling = false;
       glsl-shaders-append = [
-        # SSimDownscaler: Perceptually based downscaler.
-        "${config.home.homeDirectory}/.config/mpv/shaders/SSimDownscaler.glsl" # https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10
-
-        # SSimSuperRes: Make corrections to the image upscaled by mpv built-in scaler
-        # (removes ringing artifacts and restores original sharpness).
-        "${config.home.homeDirectory}/.config/mpv/shaders/SSimSuperRes.glsl" # https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b
-
-        # KrigBilateral: Chroma scaler that uses luma information for high quality upscaling.
-        "${config.home.homeDirectory}/.config/mpv/shaders/KrigBilateral.glsl" # https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637
-                
-        # Adaptive-directional sharpening algorithm shaders for NVidia GPUs.
-        # https://gist.github.com/agyild/7e8951915b2bf24526a9343d951db214
-        "${config.home.homeDirectory}/.config/mpv/shaders/NVScaler.glsl"
-        "${config.home.homeDirectory}/.config/mpv/shaders/NVSharpen.glsl"
+        "${ssimDownscaler}"
+        "${ssimSuperRes}"
+        "${krigBilateral}"
+        "${nvScaler}"
+        "${nvSharpen}"
       ];
     };
     profiles = {
       "protocol.http" = {
         cache = true;
-        cache-secs = 600;
+        cache-secs = 1800;
       };
       "protocol.https" = {
         cache = true;
-        cache-secs = 600;
+        cache-secs = 1800;
       };
       "upscale-lowres-using-GPU-shaders" = {
         profile-desc = "Upscales low resolution videos using GPU upscaling shaders.";
