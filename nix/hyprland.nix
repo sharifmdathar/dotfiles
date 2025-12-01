@@ -82,12 +82,12 @@ in
         active_opacity = 1.0;
         inactive_opacity = 0.8;
         shadow = {
-          enabled = true;
+          enabled = false;
           range = 4;
           render_power = 3;
         };
         blur = {
-          enabled = true;
+          enabled = false;
           size = 3;
           passes = 1;
           vibrancy = 0.1696;
@@ -95,7 +95,7 @@ in
       };
 
       animations = {
-        enabled = true;
+        enabled = false;
         bezier = [
           "easeOutQuint,0.23,1,0.32,1"
           "easeInOutCubic,0.65,0.05,0.36,1"
@@ -160,10 +160,10 @@ in
         "${mainMod}, F, togglefloating"
         "${mainMod}, J, togglesplit"
         "${mainMod}, space, exec, ${pkgs.wofi}/bin/wofi --show drun"
-        "${mainMod}, W, exec, ${pkgs.google-chrome}/bin/google-chrome-stable"
         "${mainMod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.wofi}/bin/wofi --dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
-        "${mainMod}, L, exec, hyprlock"
-        "${mainMod}, C, exec, code"
+        "${mainMod}, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
+        "${mainMod}, C, exec, ${pkgs.code-cursor}/bin/cursor"
+        "${mainMod}, B, exec, ${pkgs.firefox}/bin/firefox"
         "${mainMod}, T, exec, ${toggleCaffeineScript}/bin/toggle-caffeine"
         ",print, exec, ${pkgs.hyprshot}/bin/hyprshot -m output -m eDP-1"
         "shift,print, exec, ${pkgs.hyprshot}/bin/hyprshot -m region"

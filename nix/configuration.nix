@@ -32,7 +32,7 @@
         name = "JetBrains Mono";
       };
       emoji = {
-        package = pkgs.noto-fonts-emoji;
+        package = pkgs.noto-fonts-color-emoji;
         name = "Noto Color Emoji";
       };
     };
@@ -45,7 +45,6 @@
       timeout = 1;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    # resumeDevice = "/dev/disk/by-uuid/d57a97f3-74e3-4f19-8e4b-40f951fdf610";
     kernelParams = [
       "quiet"
       "splash"
@@ -53,15 +52,37 @@
       "rd.systemd.show_status=false"
       "rd.udev.log_level=3"
       "udev.log_priority=3"
+      "pstore.disable=1"
     ];
     consoleLogLevel = 0;
     initrd.verbose = false;
+
+    initrd.availableKernelModules = [
+      "xhci_pci"
+      "nvme"
+      "sd_mod"
+    ];
+
     extraModulePackages = [ config.boot.kernelPackages.tuxedo-keyboard ];
-    kernelModules = [ "tuxedo_keyboard" ];
     extraModprobeConfig = ''
       options tuxedo_keyboard color=WHITE
     '';
     supportedFilesystems = [ "ntfs" ];
+  };
+
+  powerManagement.cpuFreqGovernor = "schedutil";
+
+  zramSwap = {
+    enable = true;
+    memoryPercent = 25;
+  };
+
+  services.journald = {
+    rateLimitInterval = "30s";
+    rateLimitBurst = 200;
+    extraConfig = ''
+      SystemMaxUse=200M
+    '';
   };
 
   networking = {
@@ -164,8 +185,8 @@
         };
       };
     };
-    logind.powerKey = "suspend-then-hibernate";
-    logind.suspendKey = "ignore";
+    logind.settings.Login.HandlePowerKey = "suspend-then-hibernate";
+    logind.settings.Login.HandleSuspendKey = "ignore";
     pipewire = {
       enable = true;
       alsa = {
@@ -175,6 +196,16 @@
       pulse.enable = true;
     };
     udisks2.enable = true;
+  };
+
+  systemd.services."tuxedo-keyboard-late" = {
+    description = "Load tuxedo_keyboard module after boot";
+    wantedBy = [ "multi-user.target" ];
+    after = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.kmod}/bin/modprobe tuxedo_keyboard";
+    };
   };
 
   users = {
@@ -208,6 +239,6 @@
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
 

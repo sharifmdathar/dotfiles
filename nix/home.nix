@@ -82,11 +82,11 @@
     git = {
       enable = true;
       lfs.enable = true;
-      userName = "sharifmdathar";
-      userEmail = "116189751+sharifmdathar@users.noreply.github.com";
-      extraConfig = {
+      settings = {
         init.defaultBranch = "main";
         push.autoSetupRemote = true;
+        user.name = "sharifmdathar";
+        user.email = "116189751+sharifmdathar@users.noreply.github.com";
       };
     };
 
@@ -120,7 +120,7 @@
   stylix.targets.mako.enable = false;
 
   home.homeDirectory = "/home/blazen";
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   home.username = "blazen";
 
   programs.home-manager.enable = true;

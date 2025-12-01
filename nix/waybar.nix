@@ -15,6 +15,33 @@ let
       systemctl --user start caffeine
     fi
   '';
+  powerMenu = pkgs.writeText "power_menu.xml" ''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <interface>
+      <object class="GtkMenu" id="menu">
+        <child>
+          <object class="GtkMenuItem" id="shutdown">
+            <property name="label"> Shutdown</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="reboot">
+            <property name="label"> Reboot</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="suspend">
+            <property name="label"> Suspend</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="hibernate">
+            <property name="label"> Hibernate</property>
+          </object>
+        </child>
+      </object>
+    </interface>
+  '';
 in
 {
   programs.waybar = {
@@ -59,7 +86,7 @@ in
           format = "⏻";
           tooltip = false;
           menu = "on-click";
-          menu-file = "${config.home.homeDirectory}/.config/waybar/power_menu.xml";
+          menu-file = "${powerMenu}";
           menu-actions = {
             shutdown = "poweroff";
             reboot = "reboot";
@@ -145,8 +172,7 @@ in
       }
       /* Add spacing/padding to power and notifications icons */
       #custom-power {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding: 0 12px;
       }
       #custom-notifications {
         padding-left: 12px;
