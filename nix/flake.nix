@@ -9,9 +9,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix.url = "github:danth/stylix/release-25.11";
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -29,6 +33,7 @@
         modules = [
           ./configuration.nix
           stylix.nixosModules.stylix
+          auto-cpufreq.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

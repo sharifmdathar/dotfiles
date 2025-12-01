@@ -1,7 +1,7 @@
 # Edit this configuration file to define what should be installed on your system.
 # Help is available in the configuration.nix(5) man page and in the NixOS manual (accessible by running 'nixos-help').
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -40,7 +40,10 @@
 
   boot = {
     loader = {
-      systemd-boot.enable = true;
+      systemd-boot = {
+        enable = true;
+        configurationLimit = 5;
+      };
       efi.canTouchEfiVariables = true;
       timeout = 1;
     };
@@ -71,6 +74,7 @@
   };
 
   powerManagement.cpuFreqGovernor = "schedutil";
+  powerManagement.powertop.enable = true;
 
   zramSwap = {
     enable = true;
@@ -185,8 +189,10 @@
         };
       };
     };
-    logind.settings.Login.HandlePowerKey = "suspend-then-hibernate";
-    logind.settings.Login.HandleSuspendKey = "ignore";
+    logind.settings.Login = {
+      HandlePowerKey = "suspend-then-hibernate";
+      HandleSuspendKey = "ignore";
+    };
     pipewire = {
       enable = true;
       alsa = {
@@ -218,6 +224,21 @@
   };
 
   programs = {
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        charger = {
+          governor = "performance";
+          turbo = "auto";
+          energy_performance_preference = "performance";
+        };
+        battery = {
+          governor = "powersave";
+          turbo = "auto";
+          energy_performance_preference = "power";
+        };
+      };
+    };
     hyprland.enable = true;
     thunderbird.enable = true;
     zsh = {
@@ -239,6 +260,13 @@
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+  
   system.stateVersion = "25.11";
 }
 
