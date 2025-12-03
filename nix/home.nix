@@ -11,7 +11,7 @@
   home.packages = with pkgs; [
     # User applications
     _64gram
-    firefox
+    floorp-bin
     google-chrome
     libreoffice-qt6-fresh
     motrix
@@ -24,6 +24,8 @@
     unstablePkgs.code-cursor
     unstablePkgs.unityhub
     arduino-ide
+    docker
+    docker-compose
     gcc
     gnumake
     neovim
@@ -33,6 +35,7 @@
     # Terminal utilities
     bluetuith
     fastfetch
+    fzf
     ranger
     ripgrep
     swaynotificationcenter

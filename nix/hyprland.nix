@@ -150,7 +150,9 @@ in
         sensitivity = -0.5;
       };
 
-      gestures.workspace_swipe = true;
+      gestures = {
+        gesture = "3, horizontal, workspace";
+      };
 
       bind = [
         "${mainMod}, RETURN, exec, ${pkgs.alacritty}/bin/alacritty"

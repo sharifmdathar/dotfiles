@@ -97,6 +97,11 @@
   };
   systemd.services."NetworkManager-wait-online".enable = false;
 
+  services.udev.extraRules = ''
+      # Disable autosuspend for USB OPTICAL MOUSE
+      ATTR{idVendor}=="0000", ATTR{idProduct}=="3825", TEST=="power/control", ATTR{power/control}="on"
+  '';
+
   security = {
     polkit.enable = true;
     rtkit.enable = true; # For Audio
@@ -204,6 +209,8 @@
     udisks2.enable = true;
   };
 
+  virtualisation.docker.enable = false;
+
   systemd.services."tuxedo-keyboard-late" = {
     description = "Load tuxedo_keyboard module after boot";
     wantedBy = [ "multi-user.target" ];
@@ -219,7 +226,7 @@
     users.blazen = {
       isNormalUser = true;
       description = "Blazen";
-      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" ];
+      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" ];
     };
   };
 
@@ -251,9 +258,13 @@
       interactiveShellInit = ''
         bindkey "^[[1;5D" backward-word  # Ctrl + Left
         bindkey "^[[1;5C" forward-word   # Ctrl + Right
+        bindkey "^H" backward-kill-word   # Ctrl + Backspace
+        bindkey "^[[3;5~" kill-word       # Ctrl + Delete
         export EDITOR="nvim"
         export VISUAL="nvim"
         export SUDO_EDITOR="nvim"
+        # Enable fzf keybindings (Ctrl+R for history search)
+        source ${pkgs.fzf}/share/fzf/key-bindings.zsh
       '';
     };
   };
