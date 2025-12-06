@@ -165,7 +165,7 @@ in
         "${mainMod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.wofi}/bin/wofi --dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
         "${mainMod}, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
         "${mainMod}, C, exec, ${pkgs.code-cursor}/bin/cursor"
-        "${mainMod}, B, exec, ${pkgs.firefox}/bin/firefox"
+        "${mainMod}, B, exec, ${pkgs.xdg-utils}/bin/xdg-open https://"
         "${mainMod}, T, exec, ${toggleCaffeineScript}/bin/toggle-caffeine"
         ",print, exec, ${pkgs.hyprshot}/bin/hyprshot -m output -m eDP-1"
         "shift,print, exec, ${pkgs.hyprshot}/bin/hyprshot -m region"
@@ -218,6 +218,8 @@ in
       windowrulev2 = [
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+        "opacity 1.25,title:Picture-in-Picture"
+        "opacity 1.25,floating:1,class:^(firefox|chromium|Google-chrome|Brave-browser|mpv|vlc|floorp)$"
       ];
     };
 

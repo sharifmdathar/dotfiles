@@ -11,8 +11,8 @@
   home.packages = with pkgs; [
     # User applications
     _64gram
-    floorp-bin
-    google-chrome
+    #floorp-bin
+    brave
     libreoffice-qt6-fresh
     motrix
     viewnior

@@ -94,6 +94,11 @@
     networkmanager.enable = true;
     dhcpcd.wait = "background";
     firewall.enable = false;
+    hosts = {
+      "172.16.254.1"  = [
+          "cyberoam.iiitnr.edu.in"
+      ];
+    };
   };
   systemd.services."NetworkManager-wait-online".enable = false;
 
@@ -127,7 +132,7 @@
       modesetting.enable = true;
       powerManagement.enable = true;
       powerManagement.finegrained = true;
-      open = true;
+      open = false;
       nvidiaSettings = false;
     };
   };
@@ -138,7 +143,6 @@
     systemPackages = with pkgs; [
       # System-level theming & core utilities
       adwaita-icon-theme
-      gnome-themes-extra
       xdg-utils
 
       # Hyprland ecosystem (system-level)
@@ -270,12 +274,17 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = [ "nix-command" "flakes" ];
+    };
   };
   
   system.stateVersion = "25.11";

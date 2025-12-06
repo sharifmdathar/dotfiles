@@ -14,14 +14,39 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/9da5b0f3-1425-427b-8f70-b0071a53f2c3";
-      fsType = "ext4";
+    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+      fsType = "btrfs";
+      options = [ "subvol=@" ];
+    };
+
+  fileSystems."/.snapshots" =
+    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+      fsType = "btrfs";
+      options = [ "subvol=@snapshots" ];
     };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/B4AA-5210";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
+    };
+
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+      fsType = "btrfs";
+      options = [ "subvol=@home" ];
+    };
+
+  fileSystems."/nix" =
+    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+      fsType = "btrfs";
+      options = [ "subvol=@nix" ];
+    };
+
+  fileSystems."/var/log" =
+    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+      fsType = "btrfs";
+      options = [ "subvol=@var-log" ];
     };
 
   swapDevices = [ ];
@@ -31,6 +56,7 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.ap0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp3s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp0s20f3.useDHCP = lib.mkDefault true;
 
