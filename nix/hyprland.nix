@@ -229,6 +229,7 @@ in
       exec-once = swayosd-server
       exec-once = wl-paste --watch cliphist store
       exec-once = systemctl --user start hyprpolkitagent
+      exec-once = systemctl --user start swayosd-libinput-backend
     '';
   };
 }

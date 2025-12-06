@@ -31,6 +31,8 @@
     neovim
     nodejs_24
     pnpm
+    python313
+    uv
 
     # Terminal utilities
     bluetuith
@@ -72,6 +74,24 @@
       WantedBy = [ ];
     };
   };
+
+  systemd.user.services.swayosd-libinput-backend = {
+    Unit = {
+      Description = "SwayOSD LibInput listener backend for keyboard indicators";
+      After = [ "graphical-session.target" ];
+      PartOf = [ "graphical-session.target" ];
+    };
+    Service = {
+      Type = "simple";
+      ExecStart = ''${pkgs.swayosd}/bin/swayosd-libinput-backend'';
+      Restart = "on-failure";
+      RestartSec = 1;
+    };
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
+    };
+  };
+
 
   programs = {
     alacritty = {

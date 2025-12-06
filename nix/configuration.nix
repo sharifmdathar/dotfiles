@@ -3,6 +3,39 @@
 
 { config, pkgs, inputs, ... }:
 
+let
+  swayosd-dbus-policy = pkgs.writeText "org.erikreider.swayosd-user.conf" ''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE busconfig PUBLIC "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN" "https://specifications.freedesktop.org/dbus/introspect-latest.dtd">
+    <busconfig>
+      <!-- Allow user blazen to own the service -->
+      <policy user="blazen">
+        <allow own="org.erikreider.swayosd" />
+      </policy>
+      <!-- Anyone can talk to the main interface -->
+      <policy context="default">
+        <allow send_destination="org.erikreider.swayosd" send_interface="org.erikreider.swayosd" />
+        <allow send_destination="org.erikreider.swayosd"
+          send_interface="org.freedesktop.DBus.Introspectable" />
+        <allow send_destination="org.erikreider.swayosd"
+          send_interface="org.freedesktop.DBus.Properties" />
+        <allow send_destination="org.erikreider.swayosd" send_interface="org.freedesktop.DBus.Peer" />
+      </policy>
+    </busconfig>
+  '';
+  
+  swayosd-with-user-policy = pkgs.symlinkJoin {
+    name = "swayosd-with-user-policy";
+    paths = [ pkgs.swayosd ];
+    buildInputs = [ pkgs.makeWrapper ];
+    postBuild = ''
+      # Override the DBus policy file
+      rm -f $out/share/dbus-1/system.d/org.erikreider.swayosd.conf
+      cp ${swayosd-dbus-policy} $out/share/dbus-1/system.d/org.erikreider.swayosd.conf
+    '';
+  };
+in
+
 {
   imports =
     [
@@ -178,6 +211,9 @@
   };
 
   services = {
+    dbus = {
+      packages = [ swayosd-with-user-policy ];
+    };
     create_ap = {
       enable = false;
       settings = {
@@ -225,12 +261,13 @@
     };
   };
 
+
   users = {
     defaultUserShell = pkgs.zsh;
     users.blazen = {
       isNormalUser = true;
       description = "Blazen";
-      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" ];
+      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" "input" ];
     };
   };
 
