@@ -28,22 +28,37 @@
     docker-compose
     gcc
     gnumake
+    linuxHeaders
+    flac
     neovim
+    portaudio
+    libpulseaudio
     nodejs_24
     pnpm
     python313
     uv
 
     # Terminal utilities
+    bat
     bluetuith
+    bottom
+    broot
+    dust
+    eza
     fastfetch
+    fd
     fzf
+    hyperfine
+    procs
     ranger
     ripgrep
     swaynotificationcenter
     swayosd
+    tldr
     unstablePkgs.gemini-cli
     wget
+    xplr
+    zoxide
 
     # File management & archives
     p7zip
@@ -92,6 +107,9 @@
     };
   };
 
+  home.sessionVariables = {
+    PATH = "${pkgs.flac}/bin:$PATH";
+  };
 
   programs = {
     alacritty = {
@@ -128,11 +146,31 @@
       };
     };
 
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+
     zsh = {
       enable = true;
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
+      shellAliases = {
+        ls = "eza";
+        ll = "eza -l";
+        la = "eza -la";
+        lt = "eza --tree";
+        cat = "bat";
+        du = "dust";
+        find = "fd";
+        grep = "rg";
+        ps = "procs";
+        man = "tldr";
+        tree = "broot";
+        top = "btm";
+        nnn = "xplr";
+      };
     };
   };
 

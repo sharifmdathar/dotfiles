@@ -267,7 +267,7 @@ in
     users.blazen = {
       isNormalUser = true;
       description = "Blazen";
-      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" "input" ];
+      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" "input" "audio" ];
     };
   };
 
