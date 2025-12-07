@@ -64,7 +64,7 @@ in
     enable = true;
     settings = {
       monitor = [
-        "eDP-1,1920x1080@60,0x0,1"
+        "eDP-1,1920x1080@60,0x0,1.25"
         ",preferred,auto,1"
       ];
       xwayland.force_zero_scaling = true;
@@ -201,8 +201,8 @@ in
         ", XF86AudioMute, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume mute-toggle"
         ", XF86MonBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='intel_backlight' --brightness +1"
         ", XF86MonBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client  --device='intel_backlight' --brightness -1"
-        ", XF86KbdBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness +5"
-        ", XF86KbdBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness -5"
+        ", XF86KbdBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness +20"
+        ", XF86KbdBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness -20"
         ", XF86KbdLightOnOff, exec, ${toggleKbdScript}/bin/toggle-kbd-script"
         ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
         ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"

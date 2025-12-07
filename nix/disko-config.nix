@@ -8,38 +8,30 @@
         device = "/dev/disk/by-uuid/B4AA-5210";
         mountOptions = [ "fmask=0077" "dmask=0077" ];
       };
-    };
-    
-    disk = {
-      nixos = {
-        device = "/dev/nvme0n1p4";
-        type = "disk";
-        content = {
-          type = "btrfs";
-          extraArgs = [ "-f" ];
-          subvolumes = {
-            "@" = {
-              mountpoint = "/";
-              mountOptions = [ "compress=zstd" "noatime" "subvol=@" ];
-            };
-            "@home" = {
-              mountpoint = "/home";
-              mountOptions = [ "compress=zstd" "noatime" "subvol=@home" ];
-            };
-            "@nix" = {
-              mountpoint = "/nix";
-              mountOptions = [ "compress=zstd" "noatime" "subvol=@nix" ];
-            };
-            "@var-log" = {
-              mountpoint = "/var/log";
-              mountOptions = [ "compress=zstd" "noatime" "subvol=@var-log" ];
-            };
-            "@snapshots" = {
-              mountpoint = "/.snapshots";
-              mountOptions = [ "noatime" "subvol=@snapshots" ];
-            };
-          };
-        };
+      "/" = {
+        fsType = "btrfs";
+        device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+        mountOptions = [ "compress=zstd" "noatime" "subvol=@" ];
+      };
+      "/home" = {
+        fsType = "btrfs";
+        device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+        mountOptions = [ "compress=zstd" "noatime" "subvol=@home" ];
+      };
+      "/nix" = {
+        fsType = "btrfs";
+        device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+        mountOptions = [ "compress=zstd" "noatime" "subvol=@nix" ];
+      };
+      "/var/log" = {
+        fsType = "btrfs";
+        device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+        mountOptions = [ "compress=zstd" "noatime" "subvol=@var-log" ];
+      };
+      "/.snapshots" = {
+        fsType = "btrfs";
+        device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
+        mountOptions = [ "noatime" "subvol=@snapshots" ];
       };
     };
   };

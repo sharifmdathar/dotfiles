@@ -1,4 +1,4 @@
-{ pkgs, config, inputs, unstablePkgs, ... }:
+{ pkgs, config, inputs, unstablePkgs, helium-browser, ... }:
 
 {
   imports = [
@@ -13,6 +13,7 @@
     _64gram
     #floorp-bin
     brave
+    helium-browser
     libreoffice-qt6-fresh
     motrix
     viewnior
@@ -176,6 +177,16 @@
 
   gtk = {
     enable = true;
+  };
+
+  xdg.desktopEntries.helium-browser = {
+    name = "Helium Browser";
+    genericName = "Web Browser";
+    exec = "helium-browser %U";
+    icon = "helium-browser";
+    terminal = false;
+    categories = [ "Network" "WebBrowser" ];
+    mimeType = [ "text/html" "text/xml" "application/xhtml+xml" "application/xml" "application/vnd.mozilla.xul+xml" "application/rss+xml" "application/rdf+xml" "image/svg+xml" ];
   };
 
   stylix.targets.mako.enable = false;

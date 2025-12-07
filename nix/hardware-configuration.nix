@@ -13,42 +13,8 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
-      fsType = "btrfs";
-      options = [ "subvol=@" ];
-    };
-
-  fileSystems."/.snapshots" =
-    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
-      fsType = "btrfs";
-      options = [ "subvol=@snapshots" ];
-    };
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/B4AA-5210";
-      fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
-    };
-
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
-      fsType = "btrfs";
-      options = [ "subvol=@home" ];
-    };
-
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
-      fsType = "btrfs";
-      options = [ "subvol=@nix" ];
-    };
-
-  fileSystems."/var/log" =
-    { device = "/dev/disk/by-uuid/13e37ccc-6d0f-4562-987f-4cd2ba21364a";
-      fsType = "btrfs";
-      options = [ "subvol=@var-log" ];
-    };
-
+  # File systems are now managed by disko (see disko-config.nix)
+  # Disko will automatically generate the fileSystems configuration
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

@@ -13,9 +13,13 @@
       url = "github:AdnanHodzic/auto-cpufreq";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, disko, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -26,12 +30,16 @@
         inherit system;
         config.allowUnfree = true;
       };
+      
+      # Import Helium Browser package definition
+      helium-browser = import ./helium-browser.nix { inherit pkgs; };
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs unstablePkgs; };
+        specialArgs = { inherit inputs unstablePkgs helium-browser; };
         modules = [
           ./configuration.nix
+          disko.nixosModules.disko
           stylix.nixosModules.stylix
           auto-cpufreq.nixosModules.default
           home-manager.nixosModules.home-manager
@@ -39,7 +47,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = { inherit inputs unstablePkgs; };
+            home-manager.extraSpecialArgs = { inherit inputs unstablePkgs helium-browser; };
             home-manager.users.blazen = import ./home.nix;
           }
         ];
