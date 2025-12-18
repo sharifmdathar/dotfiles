@@ -3,11 +3,11 @@
 # Source: https://github.com/imputnet/helium-linux
 pkgs.appimageTools.wrapType2 {
   pname = "helium-browser";
-  version = "0.7.1.1";
+  version = "0.7.5.1";
   
   src = pkgs.fetchurl {
-    url = "https://github.com/imputnet/helium-linux/releases/download/0.7.1.1/helium-0.7.1.1-x86_64.AppImage";
-    hash = "sha256-spUogmjv+RNjtuDs5tY7vXFgKR62qUb85Gj/bERCza4=";
+    url = "https://github.com/imputnet/helium-linux/releases/download/0.7.5.1/helium-0.7.5.1-x86_64.AppImage";
+    hash = "sha256-Rn08KobbfMh3vlM2o0PA9OhQx/syMTBKWG/eapF45eo=";
   };
   
   extraPkgs = pkgs: with pkgs; [

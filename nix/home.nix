@@ -27,6 +27,7 @@
     arduino-ide
     docker
     docker-compose
+    espeak
     gcc
     gnumake
     linuxHeaders
@@ -49,14 +50,19 @@
     fastfetch
     fd
     fzf
+    gh
+    htop
     hyperfine
     procs
+    playerctl
+    portaudio
     ranger
     ripgrep
     swaynotificationcenter
     swayosd
     tldr
     unstablePkgs.gemini-cli
+    unstablePkgs.hyprmon
     wget
     xplr
     zoxide
@@ -187,6 +193,14 @@
     terminal = false;
     categories = [ "Network" "WebBrowser" ];
     mimeType = [ "text/html" "text/xml" "application/xhtml+xml" "application/xml" "application/vnd.mozilla.xul+xml" "application/rss+xml" "application/rdf+xml" "image/svg+xml" ];
+  };
+
+  xdg.mimeApps.defaultApplications = {
+    "text/html" = "helium-browser.desktop";
+    "x-scheme-handler/http" = "helium-browser.desktop";
+    "x-scheme-handler/https" = "helium-browser.desktop";
+    "x-scheme-handler/about" = "helium-browser.desktop";
+    "x-scheme-handler/unknown" = "helium-browser.desktop";
   };
 
   stylix.targets.mako.enable = false;

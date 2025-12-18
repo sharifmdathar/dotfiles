@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, helium-browser, ... }:
 
 let
   mainMod = "SUPER";
@@ -63,9 +63,19 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      monitor = [
-        "eDP-1,1920x1080@60,0x0,1.25"
-        ",preferred,auto,1"
+      monitorv2 = [
+        {
+          output = "eDP-1";
+          mode = "1920x1080@60";
+          position = "0x0";
+          scale = 1;
+          bitdepth = 10;
+          cm = "auto";
+        }
+        {
+          output = "";
+          mirror = "eDP-1";
+        }
       ];
       xwayland.force_zero_scaling = true;
       general = {
@@ -218,8 +228,8 @@ in
       windowrulev2 = [
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-        "opacity 1.25,title:Picture-in-Picture"
-        "opacity 1.25,floating:1,class:^(firefox|chromium|Google-chrome|Brave-browser|mpv|vlc|floorp)$"
+        "opacity 1.0,title:Picture in picture"
+        "opacity 0.8,floating:1,class:^(firefox|chromium|Google-chrome|brave|mpv|vlc|floorp)$"
       ];
     };
 

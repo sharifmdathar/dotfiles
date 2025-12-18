@@ -81,7 +81,7 @@ in
       efi.canTouchEfiVariables = true;
       timeout = 1;
     };
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
     kernelParams = [
       "quiet"
       "splash"
@@ -166,8 +166,9 @@ in
       modesetting.enable = true;
       powerManagement.enable = true;
       powerManagement.finegrained = true;
-      open = false;
+      open = true;
       nvidiaSettings = false;
+      package = pkgs.cachyosKernels.linuxPackages-cachyos-latest.nvidiaPackages.stable;
     };
   };
 
@@ -253,7 +254,7 @@ in
     udisks2.enable = true;
   };
 
-  virtualisation.docker.enable = false;
+  virtualisation.docker.enable = true;
 
   systemd.services."tuxedo-keyboard-late" = {
     description = "Load tuxedo_keyboard module after boot";
@@ -325,6 +326,15 @@ in
     settings = {
       auto-optimise-store = true;
       experimental-features = [ "nix-command" "flakes" ];
+      substituters = [
+        "https://cache.nixos.org"
+        "https://attic.xuyh0120.win/lantian"
+        "https://cache.garnix.io"
+      ];
+      trusted-public-keys = [
+        "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
+        "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+      ];
     };
   };
   

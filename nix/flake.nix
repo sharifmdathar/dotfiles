@@ -17,9 +17,10 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, disko, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, disko, nix-cachyos-kernel, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -31,13 +32,17 @@
         config.allowUnfree = true;
       };
       
-      # Import Helium Browser package definition
       helium-browser = import ./helium-browser.nix { inherit pkgs; };
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs unstablePkgs helium-browser; };
         modules = [
+          {
+            nixpkgs.overlays = [
+              nix-cachyos-kernel.overlays.default
+            ];
+          }
           ./configuration.nix
           disko.nixosModules.disko
           stylix.nixosModules.stylix
