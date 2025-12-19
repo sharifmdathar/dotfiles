@@ -1,4 +1,11 @@
-{ pkgs, config, inputs, unstablePkgs, helium-browser, ... }:
+{
+  pkgs,
+  config,
+  inputs,
+  unstablePkgs,
+  helium-browser,
+  ...
+}:
 
 {
   imports = [
@@ -11,13 +18,10 @@
   home.packages = with pkgs; [
     # User applications
     _64gram
-    #floorp-bin
-    brave
     helium-browser
     libreoffice-qt6-fresh
     motrix
-    viewnior
-    zapzap
+    imv
 
     # Development tools
     unstablePkgs.android-studio
@@ -53,6 +57,7 @@
     gh
     htop
     hyperfine
+    nixfmt-rfc-style
     procs
     playerctl
     portaudio
@@ -119,22 +124,75 @@
   };
 
   programs = {
+    home-manager.enable = true;
     alacritty = {
       enable = true;
       settings = {
         env.TERM = "xterm-256color";
-        window.padding = { x = 10; y = 10; };
+        window.padding = {
+          x = 10;
+          y = 10;
+        };
       };
+    };
+
+    direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
     };
 
     git = {
       enable = true;
       lfs.enable = true;
       settings = {
-        init.defaultBranch = "main";
-        push.autoSetupRemote = true;
         user.name = "sharifmdathar";
         user.email = "116189751+sharifmdathar@users.noreply.github.com";
+
+        core.editor = "nvim";
+        core.pager = "less -FRSX";
+        core.ignorecase = false;
+        core.excludesfile = "~/.gitignore_global";
+
+        color.ui = "auto";
+        diff.algorithm = "histogram";
+        diff.colorMoved = "default";
+        diff.mnemonicPrefix = true;
+        diff.renames = true;
+        log.date = "iso";
+        status.showUntrackedFiles = "all";
+
+        pull.rebase = true;
+        pull.ff = "only";
+        rebase.autoStash = true;
+        rebase.autoSquash = true;
+        merge.conflictstyle = "zdiff3";
+
+        branch.sort = "-committerdate";
+
+        fetch.prune = true;
+        fetch.pruneTags = true;
+        push.default = "simple";
+        push.autoSetupRemote = true;
+        push.followTags = true;
+
+        gc.auto = 256;
+        pack.useBitmaps = true;
+
+        grep.lineNumber = true;
+        grep.patternType = "perl";
+
+        rerere.enabled = true;
+        rerere.autoupdate = true;
+
+        help.autocorrect = "prompt";
+
+        init.defaultBranch = "main";
+
+        # Aliases
+        alias.lg = "log --oneline --decorate --graph --all";
+        alias.last = "log -1 HEAD";
+        alias.unc = "reset --soft HEAD~1";
       };
     };
 
@@ -177,13 +235,25 @@
         tree = "broot";
         top = "btm";
         nnn = "xplr";
+        cd = "z";
+
+        gst = "git status";
+        gl = "git log --oneline --graph --decorate";
+        ga = "git add";
+        gaa = "git add .";
+        gc = "git commit";
+        gcsm = "git commit -sm";
+        gca = "git commit --amend";
+        gco = "git checkout";
+        gcb = "git checkout -b";
+        gpl = "git pull";
+        gp = "git push";
+        gpu = "git push -u origin HEAD";
       };
     };
   };
 
-  gtk = {
-    enable = true;
-  };
+  gtk.enable = true;
 
   xdg.desktopEntries.helium-browser = {
     name = "Helium Browser";
@@ -191,8 +261,20 @@
     exec = "helium-browser %U";
     icon = "helium-browser";
     terminal = false;
-    categories = [ "Network" "WebBrowser" ];
-    mimeType = [ "text/html" "text/xml" "application/xhtml+xml" "application/xml" "application/vnd.mozilla.xul+xml" "application/rss+xml" "application/rdf+xml" "image/svg+xml" ];
+    categories = [
+      "Network"
+      "WebBrowser"
+    ];
+    mimeType = [
+      "text/html"
+      "text/xml"
+      "application/xhtml+xml"
+      "application/xml"
+      "application/vnd.mozilla.xul+xml"
+      "application/rss+xml"
+      "application/rdf+xml"
+      "image/svg+xml"
+    ];
   };
 
   xdg.mimeApps.defaultApplications = {
@@ -208,6 +290,4 @@
   home.homeDirectory = "/home/blazen";
   home.stateVersion = "25.11";
   home.username = "blazen";
-
-  programs.home-manager.enable = true;
 }

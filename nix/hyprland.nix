@@ -1,4 +1,10 @@
-{ config, pkgs, helium-browser, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  helium-browser,
+  ...
+}:
 
 let
   mainMod = "SUPER";
@@ -25,9 +31,25 @@ in
   programs.hyprlock = {
     enable = true;
     settings = {
+      general = {
+        hide_cursor = true;
+        grace = 0;
+      };
+      label = {
+        text = "Locked";
+        text_align = "center";
+        font_family = "JetBrains Mono";
+        font_size = 20;
+        color = "rgba(255, 255, 255, 1.0)";
+        position = "0, 0";
+      };
       "input-field" = {
         size = "200, 50";
         position = "0, -50";
+        outline_thickness = 2;
+        dots_center = true;
+        fade_on_empty = true;
+        placeholder_text = "";
       };
     };
   };
@@ -168,14 +190,18 @@ in
         "${mainMod}, RETURN, exec, ${pkgs.alacritty}/bin/alacritty"
         "${mainMod}, Q, killactive"
         "${mainMod}, M, exit"
+        "${mainMod} SHIFT, BACKSPACE, exit"
         "${mainMod}, E, exec, ${pkgs.xfce.thunar}/bin/thunar"
-        "${mainMod}, F, togglefloating"
+        "${mainMod}, F, fullscreen, 0"
+        "${mainMod} SHIFT, SPACE, togglefloating"
         "${mainMod}, J, togglesplit"
         "${mainMod}, space, exec, ${pkgs.wofi}/bin/wofi --show drun"
         "${mainMod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.wofi}/bin/wofi --dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
         "${mainMod}, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
+        "${mainMod}, ESCAPE, exec, ${pkgs.hyprlock}/bin/hyprlock"
         "${mainMod}, C, exec, ${pkgs.code-cursor}/bin/cursor"
         "${mainMod}, B, exec, ${pkgs.xdg-utils}/bin/xdg-open https://"
+        "${mainMod}, X, exec, ${pkgs.wlogout}/bin/wlogout"
         "${mainMod}, T, exec, ${toggleCaffeineScript}/bin/toggle-caffeine"
         ",print, exec, ${pkgs.hyprshot}/bin/hyprshot -m output -m eDP-1"
         "shift,print, exec, ${pkgs.hyprshot}/bin/hyprshot -m region"
@@ -206,6 +232,10 @@ in
         "${mainMod} SHIFT, 0, movetoworkspace, 10"
         "${mainMod}, S, togglespecialworkspace, magic"
         "${mainMod} SHIFT, S, movetoworkspace, special:magic"
+        "${mainMod}, TAB, cyclenext"
+        "${mainMod} SHIFT, TAB, cyclenext, prev"
+        "${mainMod} CTRL, left, workspace, m-1"
+        "${mainMod} CTRL, right, workspace, m+1"
         ", XF86AudioRaiseVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume raise"
         ", XF86AudioLowerVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume lower"
         ", XF86AudioMute, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume mute-toggle"
@@ -243,4 +273,3 @@ in
     '';
   };
 }
-

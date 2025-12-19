@@ -20,7 +20,18 @@
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, stylix, auto-cpufreq, disko, nix-cachyos-kernel, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      nixpkgs-unstable,
+      home-manager,
+      stylix,
+      auto-cpufreq,
+      disko,
+      nix-cachyos-kernel,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -31,9 +42,10 @@
         inherit system;
         config.allowUnfree = true;
       };
-      
+
       helium-browser = import ./helium-browser.nix { inherit pkgs; };
-    in {
+    in
+    {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs unstablePkgs helium-browser; };

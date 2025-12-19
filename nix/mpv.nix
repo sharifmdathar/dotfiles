@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   ssimDownscaler = pkgs.fetchurl {
@@ -35,54 +40,54 @@ in
       KP_SUBTRACT = "add speed -0.5";
     };
     config = {
-      script-opts="ytdl_hook-ytdl_path=yt-dlp";
-      save-position-on-quit=true;
-      force-seekable=true;
-      vlang="en,eng";
-      vo="gpu-next";
-      volume-max=100;
-      volume=100;
-      keep-open=true;
-      hls-bitrate="max";
-      prefetch-playlist=true;
-      snap-window=true;
-      gpu-api="vulkan";
-      profile="fast";
-      hwdec="nvdec";
-      autocreate-playlist="same";
-      demuxer-mkv-subtitle-preroll=true;
-      blend-subtitles=true;
-      target-colorspace-hint=true;
-      target-contrast="auto";
-      deband=true;
-      deband-iterations=4;
-      deband-threshold=48;
-      deband-range=24;
-      deband-grain=16;
-      scale-antiring=0.8;
-      dscale-antiring=0.8;
-      cscale-antiring=0.8;
-      interpolation=true;
-      video-sync="display-resample";
-      cursor-autohide-fs-only=true;
-      msg-color=true;
-      msg-module=true;
-      term-osd-bar=true;
-      osd-bar-align-y=-1;
-      osd-bar-h=2;
-      osd-bar-w=99;
+      script-opts = "ytdl_hook-ytdl_path=yt-dlp";
+      save-position-on-quit = true;
+      force-seekable = true;
+      vlang = "en,eng";
+      vo = "gpu-next";
+      volume-max = 100;
+      volume = 100;
+      keep-open = true;
+      hls-bitrate = "max";
+      prefetch-playlist = true;
+      snap-window = true;
+      gpu-api = "vulkan";
+      profile = "fast";
+      hwdec = "nvdec";
+      autocreate-playlist = "same";
+      demuxer-mkv-subtitle-preroll = true;
+      blend-subtitles = true;
+      target-colorspace-hint = true;
+      target-contrast = "auto";
+      deband = true;
+      deband-iterations = 4;
+      deband-threshold = 48;
+      deband-range = 24;
+      deband-grain = 16;
+      scale-antiring = 0.8;
+      dscale-antiring = 0.8;
+      cscale-antiring = 0.8;
+      interpolation = true;
+      video-sync = "display-resample";
+      cursor-autohide-fs-only = true;
+      msg-color = true;
+      msg-module = true;
+      term-osd-bar = true;
+      osd-bar-align-y = -1;
+      osd-bar-h = 2;
+      osd-bar-w = 99;
       # osd-border-color=lib.mkForce "#DD322640";  # Override stylix
-      osd-border-size=2;
+      osd-border-size = 2;
       # osd-color="#FFFFFFFF";
-      osd-duration=1000;
-      osd-font-size=32;
-      osd-status-msg="\${time-pos} / \${duration}\${?percent-pos:  (\${percent-pos}%)}\${?frame-drop-count:\${!frame-drop-count==0:  Dropped: \${frame-drop-count}}}\\n\${?chapter:Chapter: \${chapter}}";
-      osd-bar=false;
-      border=false;
-      alang="jp,jap,en,eng";
-      embeddedfonts=true;
-      slang="en,eng";
-      sub-auto="all";
+      osd-duration = 1000;
+      osd-font-size = 32;
+      osd-status-msg = "\${time-pos} / \${duration}\${?percent-pos:  (\${percent-pos}%)}\${?frame-drop-count:\${!frame-drop-count==0:  Dropped: \${frame-drop-count}}}\\n\${?chapter:Chapter: \${chapter}}";
+      osd-bar = false;
+      border = false;
+      alang = "jp,jap,en,eng";
+      embeddedfonts = true;
+      slang = "en,eng";
+      sub-auto = "all";
       sub-file-paths-append = [
         "Subs/\${filename/no-ext}"
         "Subs/\${filename}"
@@ -101,10 +106,10 @@ in
         "subtitles"
         "Subtitles"
       ];
-      sub-fix-timing=false;
-      sub-font-size="45";
+      sub-fix-timing = false;
+      sub-font-size = "45";
       # sub-font="Arial";
-      sub-scale-with-window=true;
+      sub-scale-with-window = true;
       glsl-shaders-clr = true;
 
       linear-downscaling = false;

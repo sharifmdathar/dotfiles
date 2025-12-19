@@ -1,7 +1,13 @@
 # Edit this configuration file to define what should be installed on your system.
 # Help is available in the configuration.nix(5) man page and in the NixOS manual (accessible by running 'nixos-help').
 
-{ config, pkgs, inputs, helium-browser, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  helium-browser,
+  ...
+}:
 
 let
   swayosd-dbus-policy = pkgs.writeText "org.erikreider.swayosd-user.conf" ''
@@ -23,7 +29,7 @@ let
       </policy>
     </busconfig>
   '';
-  
+
   swayosd-with-user-policy = pkgs.symlinkJoin {
     name = "swayosd-with-user-policy";
     paths = [ pkgs.swayosd ];
@@ -37,11 +43,10 @@ let
 in
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ./disko-config.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./disko-config.nix
+  ];
 
   stylix = {
     enable = true;
@@ -129,25 +134,25 @@ in
     dhcpcd.wait = "background";
     firewall.enable = false;
     hosts = {
-      "172.16.254.1"  = [
-          "cyberoam.iiitnr.edu.in"
+      "172.16.254.1" = [
+        "cyberoam.iiitnr.edu.in"
       ];
     };
   };
   systemd.services."NetworkManager-wait-online".enable = false;
 
   services.udev.extraRules = ''
-      # Disable autosuspend for USB OPTICAL MOUSE
-      ATTR{idVendor}=="0000", ATTR{idProduct}=="3825", TEST=="power/control", ATTR{power/control}="on"
+    # Disable autosuspend for USB OPTICAL MOUSE
+    ATTR{idVendor}=="0000", ATTR{idProduct}=="3825", TEST=="power/control", ATTR{power/control}="on"
   '';
 
   security = {
     polkit.enable = true;
     rtkit.enable = true; # For Audio
-    pam.services.hyprlock = {};
+    pam.services.hyprlock = { };
   };
- 
-  services.xserver.videoDrivers = ["nvidia"];
+
+  services.xserver.videoDrivers = [ "nvidia" ];
   hardware = {
     bluetooth = {
       enable = true;
@@ -172,7 +177,6 @@ in
     };
   };
 
-
   environment = {
     etc."greetd/environments".text = "Hyprland";
     systemPackages = with pkgs; [
@@ -192,7 +196,7 @@ in
       # System utilities
       udiskie
       ntfs3g
-      
+
       # Custom packages
       helium-browser
     ];
@@ -266,13 +270,20 @@ in
     };
   };
 
-
   users = {
     defaultUserShell = pkgs.zsh;
     users.blazen = {
       isNormalUser = true;
       description = "Blazen";
-      extraGroups = [ "networkmanager" "wheel" "kvm" "adbusers" "docker" "input" "audio" ];
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "kvm"
+        "adbusers"
+        "docker"
+        "input"
+        "audio"
+      ];
     };
   };
 
@@ -316,7 +327,7 @@ in
   };
 
   nixpkgs.config.allowUnfree = true;
-  
+
   nix = {
     gc = {
       automatic = true;
@@ -325,7 +336,10 @@ in
     };
     settings = {
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       substituters = [
         "https://cache.nixos.org"
         "https://attic.xuyh0120.win/lantian"
@@ -337,7 +351,6 @@ in
       ];
     };
   };
-  
+
   system.stateVersion = "25.11";
 }
-

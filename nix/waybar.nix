@@ -49,8 +49,16 @@ in
     settings = {
       mainBar = {
         position = "top";
-        modules-left = [ "hyprland/workspaces" "memory" "cpu" ];
-        modules-center = [ "custom/caffeine" "clock" "hyprland/window" ]; 
+        modules-left = [
+          "hyprland/workspaces"
+          "memory"
+          "cpu"
+        ];
+        modules-center = [
+          "custom/caffeine"
+          "clock"
+          "hyprland/window"
+        ];
         modules-right = [
           "tray"
           "bluetooth"
@@ -132,7 +140,13 @@ in
           format-plugged = " {capacity}%";
           format-alt = "{icon} {time}";
           format-full = " {capacity}%";
-          format-icons = [ "" "" "" "" "" ];
+          format-icons = [
+            ""
+            ""
+            ""
+            ""
+            ""
+          ];
           tooltip-format = "{time}";
         };
 
@@ -149,7 +163,11 @@ in
           format = "{icon} {volume}%";
           format-muted = " Muted";
           format-icons = {
-            default = [ "" "" " " ];
+            default = [
+              ""
+              ""
+              " "
+            ];
           };
           on-click = "pavucontrol";
           scroll-step = 10;
