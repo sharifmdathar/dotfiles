@@ -15,19 +15,48 @@
     ./swaync.nix
   ];
 
+  stylix = {
+    enable = true;
+    image = ./wallpaper.jpg;
+    polarity = "dark";
+    cursor = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
+      size = 24;
+    };
+    fonts = {
+      serif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Serif";
+      };
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+      monospace = {
+        package = pkgs.jetbrains-mono;
+        name = "JetBrains Mono";
+      };
+      emoji = {
+        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji";
+      };
+    };
+  };
+
   home.packages = with pkgs; [
     # User applications
     _64gram
     helium-browser
+    imv
     libreoffice-qt6-fresh
     motrix
-    imv
+    protonvpn-gui
 
     # Development tools
     unstablePkgs.android-studio
     unstablePkgs.vscode
     unstablePkgs.code-cursor
-    unstablePkgs.unityhub
     arduino-ide
     docker
     docker-compose
@@ -60,7 +89,6 @@
     nixfmt-rfc-style
     procs
     playerctl
-    portaudio
     ranger
     ripgrep
     swaynotificationcenter
@@ -75,11 +103,12 @@
     # File management & archives
     p7zip
     unzip
-    unrar
+    unar
     xfce.thunar
 
     # Desktop utilities
     pavucontrol
+    swww
     wofi
     libnotify
 
@@ -198,6 +227,19 @@
 
     git-credential-oauth.enable = true;
 
+    jujutsu = {
+      enable = true;
+      settings = {
+        user = {
+          name = "sharifmdathar";
+          email = "116189751+sharifmdathar@users.noreply.github.com";
+        };
+        ui = {
+          editor = "nvim";
+          color = "auto";
+        };
+      };
+    };
     starship = {
       enable = true;
       enableZshIntegration = true;
@@ -249,6 +291,8 @@
         gpl = "git pull";
         gp = "git push";
         gpu = "git push -u origin HEAD";
+        
+        hms = "nix run github:nix-community/home-manager/release-25.11 -- switch --flake $HOME/dotfiles/nix#blazen";
       };
     };
   };
@@ -286,6 +330,18 @@
   };
 
   stylix.targets.mako.enable = false;
+
+  home.activation.reapplyStylixWallpaper = ''
+    # Set wallpaper using stylix config value directly
+    if [ -f "${config.stylix.image}" ] && command -v swww >/dev/null 2>&1; then
+      # Make sure swww daemon is running
+      if ! pgrep -x swww-daemon >/dev/null; then
+        swww-daemon &
+        sleep 1
+      fi
+      swww img "${config.stylix.image}" --transition-type wipe --transition-duration 1 || true
+    fi
+  '';
 
   home.homeDirectory = "/home/blazen";
   home.stateVersion = "25.11";

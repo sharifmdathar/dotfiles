@@ -57,16 +57,29 @@
           }
           ./configuration.nix
           disko.nixosModules.disko
-          stylix.nixosModules.stylix
           auto-cpufreq.nixosModules.default
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
+            home-manager.useGlobalPkgs = false;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
             home-manager.extraSpecialArgs = { inherit inputs unstablePkgs helium-browser; };
-            home-manager.users.blazen = import ./home.nix;
+            home-manager.users.blazen = {
+              imports = [
+                stylix.homeModules.stylix
+                ./home.nix
+              ];
+            };
           }
+        ];
+      };
+
+      homeConfigurations.blazen = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs unstablePkgs helium-browser; };
+        modules = [
+          stylix.homeModules.stylix
+          ./home.nix
         ];
       };
     };

@@ -3,6 +3,7 @@
   pkgs,
   lib,
   helium-browser,
+  unstablePkgs,
   ...
 }:
 
@@ -165,7 +166,7 @@ in
       };
 
       misc = {
-        force_default_wallpaper = 1;
+        force_default_wallpaper = 0;
         disable_hyprland_logo = true;
       };
 
@@ -199,7 +200,7 @@ in
         "${mainMod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.wofi}/bin/wofi --dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
         "${mainMod}, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
         "${mainMod}, ESCAPE, exec, ${pkgs.hyprlock}/bin/hyprlock"
-        "${mainMod}, C, exec, ${pkgs.code-cursor}/bin/cursor"
+        "${mainMod}, C, exec, ${unstablePkgs.code-cursor}/bin/cursor"
         "${mainMod}, B, exec, ${pkgs.xdg-utils}/bin/xdg-open https://"
         "${mainMod}, X, exec, ${pkgs.wlogout}/bin/wlogout"
         "${mainMod}, T, exec, ${toggleCaffeineScript}/bin/toggle-caffeine"
@@ -264,12 +265,14 @@ in
     };
 
     extraConfig = ''
+      exec-once = swww-daemon
       exec-once = waybar
       exec-once = udiskie
       exec-once = swayosd-server
       exec-once = wl-paste --watch cliphist store
       exec-once = systemctl --user start hyprpolkitagent
       exec-once = systemctl --user start swayosd-libinput-backend
+      exec-once = sleep 1 && swww img ${config.stylix.image} --transition-type wipe --transition-duration 1 || true
     '';
   };
 }

@@ -48,35 +48,6 @@ in
     ./disko-config.nix
   ];
 
-  stylix = {
-    enable = true;
-    image = ./wallpaper.jpg;
-    polarity = "dark";
-    cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-      size = 24;
-    };
-    fonts = {
-      serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
-      };
-      sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
-      };
-      monospace = {
-        package = pkgs.jetbrains-mono;
-        name = "JetBrains Mono";
-      };
-      emoji = {
-        package = pkgs.noto-fonts-color-emoji;
-        name = "Noto Color Emoji";
-      };
-    };
-  };
-
   boot = {
     loader = {
       systemd-boot = {
@@ -173,7 +144,6 @@ in
       powerManagement.finegrained = true;
       open = true;
       nvidiaSettings = false;
-      package = pkgs.cachyosKernels.linuxPackages-cachyos-latest.nvidiaPackages.stable;
     };
   };
 
