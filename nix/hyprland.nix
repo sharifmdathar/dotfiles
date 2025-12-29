@@ -72,12 +72,12 @@ in
           on-resume = "hyprctl dispatch dpms on";
         }
         {
-          timeout = 120;
+          timeout = 2 * 60;
           on-timeout = "loginctl lock-session";
         }
         {
-          timeout = 1800;
-          on-timeout = "systemctl suspend";
+          timeout = 30 * 60;
+          on-timeout = "systemctl suspend-then-hibernate";
         }
       ];
     };
@@ -237,13 +237,13 @@ in
         "${mainMod} SHIFT, TAB, cyclenext, prev"
         "${mainMod} CTRL, left, workspace, m-1"
         "${mainMod} CTRL, right, workspace, m+1"
-        ", XF86AudioRaiseVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume raise"
-        ", XF86AudioLowerVolume, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume lower"
-        ", XF86AudioMute, exec, ${pkgs.swayosd}/bin/swayosd-client --output-volume mute-toggle"
-        ", XF86MonBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='intel_backlight' --brightness +1"
-        ", XF86MonBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client  --device='intel_backlight' --brightness -1"
-        ", XF86KbdBrightnessUp, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness +20"
-        ", XF86KbdBrightnessDown, exec, ${pkgs.swayosd}/bin/swayosd-client --device='rgb:kbd_backlight' --brightness -20"
+        ", XF86AudioRaiseVolume, exec, volumectl up"
+        ", XF86AudioLowerVolume, exec, volumectl down"
+        ", XF86AudioMute, exec, volumectl toggle-mute"
+        ", XF86MonBrightnessUp, exec, lightctl up"
+        ", XF86MonBrightnessDown, exec, lightctl down"
+        ", XF86KbdBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set +20%"
+        ", XF86KbdBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl --device='rgb:kbd_backlight' set 20%-"
         ", XF86KbdLightOnOff, exec, ${toggleKbdScript}/bin/toggle-kbd-script"
         ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
         ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"
@@ -268,10 +268,9 @@ in
       exec-once = swww-daemon
       exec-once = waybar
       exec-once = udiskie
-      exec-once = swayosd-server
       exec-once = wl-paste --watch cliphist store
+      exec-once = avizo-service
       exec-once = systemctl --user start hyprpolkitagent
-      exec-once = systemctl --user start swayosd-libinput-backend
       exec-once = sleep 1 && swww img ${config.stylix.image} --transition-type wipe --transition-duration 1 || true
     '';
   };

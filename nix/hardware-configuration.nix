@@ -28,7 +28,9 @@
 
   # File systems are now managed by disko (see disko-config.nix)
   # Disko will automatically generate the fileSystems configuration
-  swapDevices = [ ];
+  swapDevices = [
+    { device = "/dev/disk/by-uuid/987fa509-174f-49a1-9829-19572a44cf29"; }
+  ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

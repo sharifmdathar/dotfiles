@@ -66,6 +66,8 @@ in
       "rd.udev.log_level=3"
       "udev.log_priority=3"
       "pstore.disable=1"
+      "resume=/dev/disk/by-uuid/987fa509-174f-49a1-9829-19572a44cf29"
+      "mem_sleep_default=deep"
     ];
     consoleLogLevel = 0;
     initrd.verbose = false;
@@ -201,6 +203,7 @@ in
         FREQ_BAND = "2.4";
         SSID = "My Hotspot";
         PASSPHRASE = "password";
+        NO_VIRT = "1";
       };
     };
     gvfs.enable = true;
@@ -216,6 +219,7 @@ in
     logind.settings.Login = {
       HandlePowerKey = "suspend-then-hibernate";
       HandleSuspendKey = "ignore";
+      HandleLidSwitch = "suspend-then-hibernate";
     };
     pipewire = {
       enable = true;
@@ -225,10 +229,11 @@ in
       };
       pulse.enable = true;
     };
+
     udisks2.enable = true;
   };
 
-  virtualisation.docker.enable = true;
+  virtualisation.docker.enable = false;
 
   systemd.services."tuxedo-keyboard-late" = {
     description = "Load tuxedo_keyboard module after boot";
@@ -239,6 +244,11 @@ in
       ExecStart = "${pkgs.kmod}/bin/modprobe tuxedo_keyboard";
     };
   };
+  systemd.sleep.extraConfig = ''
+    HibernateDelaySec=30m
+    SuspendState=mem
+    HibernateMode=platform shutdown
+  '';
 
   users = {
     defaultUserShell = pkgs.zsh;
@@ -250,7 +260,6 @@ in
         "wheel"
         "kvm"
         "adbusers"
-        "docker"
         "input"
         "audio"
       ];
@@ -258,6 +267,7 @@ in
   };
 
   programs = {
+    zsh.enable = true;
     auto-cpufreq = {
       enable = true;
       settings = {
@@ -273,27 +283,9 @@ in
         };
       };
     };
+
     hyprland.enable = true;
     thunderbird.enable = true;
-    zsh = {
-      enable = true;
-      syntaxHighlighting.enable = true;
-      autosuggestions.enable = true;
-      shellAliases = {
-        gst = "git status";
-      };
-      interactiveShellInit = ''
-        bindkey "^[[1;5D" backward-word  # Ctrl + Left
-        bindkey "^[[1;5C" forward-word   # Ctrl + Right
-        bindkey "^H" backward-kill-word   # Ctrl + Backspace
-        bindkey "^[[3;5~" kill-word       # Ctrl + Delete
-        export EDITOR="nvim"
-        export VISUAL="nvim"
-        export SUDO_EDITOR="nvim"
-        # Enable fzf keybindings (Ctrl+R for history search)
-        source ${pkgs.fzf}/share/fzf/key-bindings.zsh
-      '';
-    };
   };
 
   nixpkgs.config.allowUnfree = true;

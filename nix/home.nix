@@ -7,12 +7,36 @@
   ...
 }:
 
+let
+  customVolumectl = pkgs.writeShellApplication {
+    name = "volumectl";
+    runtimeInputs = [
+      pkgs.wireplumber
+      pkgs.avizo
+      pkgs.gnugrep
+      pkgs.bc
+      pkgs.coreutils
+      pkgs.gawk
+    ];
+    text = builtins.readFile ./volumectl;
+  };
+  avizoWithCustomVolumectl = pkgs.symlinkJoin {
+    name = "avizo-with-custom-volumectl";
+    paths = [
+      pkgs.avizo
+      customVolumectl
+    ];
+    postBuild = ''
+      rm -f $out/bin/volumectl
+      ln -s ${customVolumectl}/bin/volumectl $out/bin/volumectl
+    '';
+  };
+in
 {
   imports = [
     ./hyprland.nix
     ./waybar.nix
     ./mpv.nix
-    ./swaync.nix
   ];
 
   stylix = {
@@ -57,19 +81,20 @@
     unstablePkgs.android-studio
     unstablePkgs.vscode
     unstablePkgs.code-cursor
+    unstablePkgs.unityhub
     arduino-ide
-    docker
-    docker-compose
     espeak
+    flac
     gcc
     gnumake
-    linuxHeaders
-    flac
-    neovim
-    portaudio
     libpulseaudio
+    linuxHeaders
+    neovim
     nodejs_24
+    portaudio
     pnpm
+    podman
+    podman-compose
     python313
     uv
 
@@ -92,7 +117,7 @@
     ranger
     ripgrep
     swaynotificationcenter
-    swayosd
+    avizoWithCustomVolumectl
     tldr
     unstablePkgs.gemini-cli
     unstablePkgs.hyprmon
@@ -118,6 +143,39 @@
 
   fonts.fontconfig.enable = true;
 
+  xdg.configFile."containers/policy.json".text = ''
+    {
+      "default": [
+        {
+          "type": "insecureAcceptAnything"
+        }
+      ],
+      "transports": {
+        "docker": {
+          "docker.io": [
+            {
+              "type": "insecureAcceptAnything"
+            }
+          ]
+        }
+      }
+    }
+  '';
+
+  xdg.configFile."containers/registries.conf".text = ''
+    unqualified-search-registries = ["docker.io", "quay.io"]
+
+    [[registry]]
+    location = "docker.io"
+    insecure = false
+    blocked = false
+
+    [[registry]]
+    location = "quay.io"
+    insecure = false
+    blocked = false
+  '';
+
   systemd.user.services.caffeine = {
     Unit = {
       Description = "Keep the session awake (inhibit idle/sleep)";
@@ -128,23 +186,6 @@
     };
     Install = {
       WantedBy = [ ];
-    };
-  };
-
-  systemd.user.services.swayosd-libinput-backend = {
-    Unit = {
-      Description = "SwayOSD LibInput listener backend for keyboard indicators";
-      After = [ "graphical-session.target" ];
-      PartOf = [ "graphical-session.target" ];
-    };
-    Service = {
-      Type = "simple";
-      ExecStart = ''${pkgs.swayosd}/bin/swayosd-libinput-backend'';
-      Restart = "on-failure";
-      RestartSec = 1;
-    };
-    Install = {
-      WantedBy = [ "graphical-session.target" ];
     };
   };
 
@@ -240,6 +281,7 @@
         };
       };
     };
+
     starship = {
       enable = true;
       enableZshIntegration = true;
@@ -253,6 +295,48 @@
       };
     };
 
+    wlogout = {
+      enable = true;
+      layout = [
+        {
+          label = "lock";
+          action = "pidof hyprlock || hyprlock";
+          text = "Lock";
+          keybind = "l";
+        }
+        {
+          label = "suspend";
+          action = "systemctl suspend";
+          text = "Suspend";
+          keybind = "s";
+        }
+        {
+          label = "suspend-then-hibernate";
+          action = "systemctl suspend-then-hibernate";
+          text = "Suspend → Hibernate";
+          keybind = "h";
+        }
+        {
+          label = "hibernate";
+          action = "systemctl hibernate";
+          text = "Hibernate";
+          keybind = "b";
+        }
+        {
+          label = "reboot";
+          action = "systemctl reboot";
+          text = "Reboot";
+          keybind = "r";
+        }
+        {
+          label = "shutdown";
+          action = "systemctl poweroff";
+          text = "Shutdown";
+          keybind = "u";
+        }
+      ];
+    };
+
     zoxide = {
       enable = true;
       enableZshIntegration = true;
@@ -264,6 +348,7 @@
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       shellAliases = {
+        n = "nvim";
         ls = "eza";
         ll = "eza -l";
         la = "eza -la";
@@ -291,9 +376,19 @@
         gpl = "git pull";
         gp = "git push";
         gpu = "git push -u origin HEAD";
-        
+
         hms = "nix run github:nix-community/home-manager/release-25.11 -- switch --flake $HOME/dotfiles/nix#blazen";
       };
+      initContent = ''
+        bindkey "^[[1;5D" backward-word  # Ctrl + Left
+        bindkey "^[[1;5C" forward-word   # Ctrl + Right
+        bindkey "^H" backward-kill-word   # Ctrl + Backspace
+        bindkey "^[[3;5~" kill-word       # Ctrl + Delete
+        export EDITOR="nvim"
+        export VISUAL="nvim"
+        export SUDO_EDITOR="nvim"
+        source ${pkgs.fzf}/share/fzf/key-bindings.zsh
+      '';
     };
   };
 

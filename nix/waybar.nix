@@ -65,7 +65,6 @@ in
           "network"
           "wireplumber"
           "battery"
-          "custom/notifications"
           "custom/power"
         ];
 
@@ -82,12 +81,6 @@ in
           tooltip-format-connected = "{device_enumerate}";
           tooltip-format-enumerate-connected = "{device_alias}\t{device_battery_percentage}%";
           on-click = "alacritty -e bluetuith";
-        };
-
-        "custom/notifications" = {
-          format = "";
-          tooltip = false;
-          on-click = "swaync-client -t";
         };
 
         "custom/power" = {

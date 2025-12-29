@@ -46,6 +46,8 @@
       helium-browser = import ./helium-browser.nix { inherit pkgs; };
     in
     {
+      formatter.${system} = pkgs.nixfmt-rfc-style;
+
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs unstablePkgs helium-browser; };

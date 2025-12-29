@@ -1,0 +1,162 @@
+#!/bin/sh
+#---help---
+# Usage:
+#   $0 [options] <command> [<value>[%]]
+#   $0 [options] (+|-)<value>%
+#   $0 [options] [=]<value>%
+#   $0 -h
+#
+# Adjust the sound or mic volume using 'wpctl' (PipeWire) and show an on-screen
+# notification using 'avizo-client'.
+#
+# Commands:
+#   + | up           Increase the volume by <value> percents (defaults to 5).
+#   - | down         Decrease the volume by <value> percents (defaults to 5).
+#   = | set          Set volume to <value> percents.
+#   x | mute         Set mute.
+#   u | unmute       Unset mute.
+#   % | toggle-mute  Switch between mute and unmute.
+#
+# Options:
+#   -m               Control the source (mic) instead of sink (output).
+#   -M <monitornr>   Set monitor where notification will be shown.
+#   -u               Unmute when changing the volume (+|-|=).
+#   -d               Show dark theme friendly variant of the icon
+#   -h               Show this message and exit.
+#
+# This script is part of the avizo package.
+#---help---
+# This script is POSIX Shell Command Language compliant.
+set -eu
+
+if ( set -o pipefail 2>/dev/null ); then
+	set -o pipefail
+fi
+
+PROGNAME='volumectl'
+
+help() {
+	local tag='---help---'
+	sed -n "/^#$tag/,/^#$tag/{/^#$tag/d; s/^# \\?//; s|\$0|$0|; p}" "$0"
+}
+
+die() {
+	printf "$PROGNAME: %s\n" "$1" >&2
+	exit 1
+}
+
+is_integer() {
+	expr "$1" : '[0-9]\+$' >/dev/null
+}
+
+dev_type='sink'
+unmute_on_change=false
+optind=1
+dark=0
+monitor=-1
+while getopts ':dmM:uh' OPT; do
+	case "$OPT" in
+		m) dev_type='source';;
+		M) monitor="$OPTARG";;
+		u) unmute_on_change=true;;
+		d) dark=1;;
+		h) help; exit 0;;
+		\?) case "$OPTARG" in
+		    	[0-9]*) break;;
+		    	*) die "unknown option: -$OPTARG";;
+		    esac
+		;;
+	esac
+	optind=$OPTIND  # hack to make -<value>% work correctly
+done
+shift $((optind -1))
+
+if [ $# -lt 1 ] || [ $# -gt 2 ]; then
+	die "invalid number of arguments (see '$0 -h')"
+fi
+
+case "$1" in
+	[=+-][0-9]*%) cmd=${1%%[0-9]*}; value=${1#[=+-]};;
+	[0-9]*%) cmd='='; value=$1;;
+	*) cmd=$1; value=${2:-5};;
+esac
+value=${value%\%}
+
+if ! is_integer "$value"; then
+	die "invalid value: '$value'"
+fi
+
+if [ "$dev_type" = 'source' ]; then
+	dev_target='@DEFAULT_AUDIO_SOURCE@'
+else
+	dev_target='@DEFAULT_AUDIO_SINK@'
+fi
+
+if $unmute_on_change && [ "$cmd" != 'x' ] && [ "$cmd" != 'u' ] && [ "$cmd" != '%' ]; then
+	wpctl set-mute "$dev_target" 0
+fi
+
+case "$cmd" in
+	+ | up | raise)
+		wpctl set-volume "$dev_target" "${value}%+"
+		;;
+	- | down | lower)
+		wpctl set-volume "$dev_target" "${value}%-"
+		;;
+	= | set)
+		wpctl set-volume "$dev_target" "${value}%"
+		;;
+	x | mute)
+		wpctl set-mute "$dev_target" 1
+		;;
+	u | unmute)
+		wpctl set-mute "$dev_target" 0
+		;;
+	% | toggle-mute)
+		wpctl set-mute "$dev_target" toggle
+		;;
+	*) die "invalid command: $cmd (see '$0 -h')";;
+esac
+
+volume_info=$(wpctl get-volume "$dev_target")
+volume_float=$(echo "$volume_info" | awk '{print $2}')
+muted=false
+echo "$volume_info" | grep -q 'MUTED' && muted=true
+
+volume=$(echo "$volume_float" | awk '{printf "%.0f", $1 * 100}')
+
+if ! is_integer "$volume"; then
+	die "wpctl returned invalid volume level: '$volume'"
+fi
+
+case "$dev_type" in
+	sink)
+		if [ "$muted" = 'true' ]; then
+			image='volume_muted'
+		elif [ "$volume" -le 33 ]; then
+			image='volume_low'
+		elif [ "$volume" -le 66 ]; then
+			image='volume_medium'
+		else
+			image='volume_high'
+		fi
+	;;
+	source)
+		if [ "$muted" = 'true' ]; then
+			image='mic_muted'
+		else
+			image='mic_unmuted'
+		fi
+	;;
+esac
+
+if [ "$dark" -eq 1 ]; then
+    image="${image}_dark"
+fi
+
+progress=$(echo "$volume" | awk '{ v=$1/100; if (v>1) v=1; printf "%.2f", v }')
+if [ "$monitor" -eq -1 ]; then
+	avizo-client --image-resource="$image" --progress="$progress"
+else
+	avizo-client --image-resource="$image" --progress="$progress" --monitor="$monitor"
+fi
