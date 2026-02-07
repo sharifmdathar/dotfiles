@@ -1,16 +1,80 @@
 [user]
-	email = 116189751+sharifmdathar@users.noreply.github.com
 	name = sharifmdathar
-[init]
-	defaultBranch = main
-[push]
-	autoSetupRemote = true
-[pull]
-	rebase = false
-[credential "https://github.com"]
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = !/usr/bin/gh auth git-credential
+	email = 116189751+sharifmdathar@users.noreply.github.com
+
 [core]
 	editor = nvim
-	pager = most
+	pager = less -FRSX
+	ignorecase = false
+	excludesfile = ~/.gitignore_global
+
+[color]
+	ui = auto
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+	mnemonicPrefix = true
+	renames = true
+
+[log]
+	date = iso
+
+[status]
+	showUntrackedFiles = all
+
+[pull]
+	rebase = true
+	ff = only
+
+[rebase]
+	autoStash = true
+	autoSquash = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[branch]
+	sort = -committerdate
+
+[fetch]
+	prune = true
+	pruneTags = true
+
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+
+[gc]
+	auto = 256
+
+[pack]
+	useBitmaps = true
+
+[grep]
+	lineNumber = true
+	patternType = perl
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[help]
+	autocorrect = prompt
+
+[init]
+	defaultBranch = main
+
+[alias]
+	lg = log --oneline --decorate --graph --all
+	last = log -1 HEAD
+	unc = reset --soft HEAD~1
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
