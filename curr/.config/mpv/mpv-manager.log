@@ -1,0 +1,1546 @@
+[2026-06-14 21:54:28] === MPV.Rocks Installer Log Started ===
+[2026-06-14 21:54:28] Timestamp: 2026-06-14T21:54:28+05:30
+[2026-06-14 21:54:28] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:54:28] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:54:28] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:54:28] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:54:28] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:54:28] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:54:28] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:54:28] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:54:28] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:54:28] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:54:28] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:54:28] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:54:28] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:54:28] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:54:28] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:54:28] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:54:28] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:54:28] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-06-14 21:54:28] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-06-14 21:54:29] [INFO] Created default config file: ~/.config/mpv/mpv-manager.json
+[2026-06-14 21:54:29] [INFO] Initializing version check cache...
+[2026-06-14 21:54:29] [INFO] Detecting installed MPV apps...
+[2026-06-14 21:54:29] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 21:54:29] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 21:54:29] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 21:54:30] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 21:54:30] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 21:54:30] [INFO] [Detection] Adding newly detected app: MPV (mpv-package)
+[2026-06-14 21:54:30] [INFO] Adding app to installed_apps: MPV
+[2026-06-14 21:54:30] [INFO] App type: app, Method: mpv-package
+[2026-06-14 21:54:30] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 21:54:30] [INFO] Added 1 newly detected apps to config
+[2026-06-14 21:54:30] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-06-14 21:54:30] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-06-14 21:54:30] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-06-14 21:54:30] [INFO] Web server listening on 127.0.0.1:6787
+[2026-06-14 21:54:31] [INFO] Checking for manager updates...
+[2026-06-14 21:54:31] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 21:54:31] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:54:31] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:54:31] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:54:31] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:54:31] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:54:31] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:54:31] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:54:31] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:54:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:54:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:54:31] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:54:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:54:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:54:31] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:54:31] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:54:31] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:54:31] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:54:31] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:54:31] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:54:31] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:54:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:54:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:54:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:54:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:54:31] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:08] [INFO] [API]Adopt app request received: app_name=MPV, method=mpv-package, ui_type=uosc
+[2026-06-14 21:55:09] [INFO] [API] Refreshing installed apps, updates, and install methods...
+[2026-06-14 21:55:09] [INFO] Refreshing version check cache...
+[2026-06-14 21:55:09] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 21:55:09] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 21:55:10] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 21:55:10] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 21:55:10] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 21:55:11] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-06-14 21:55:11] [INFO] [API] Apps refresh complete, adding 1500ms delay for visual feedback...
+[2026-06-14 21:55:12] [COMMAND] /usr/sbin/unzip -o -q ~/.config/mpv/uosc.zip -d ~/.config/mpv
+[2026-06-14 21:55:12] [INFO] Command completed successfully
+[2026-06-14 21:55:13] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 21:55:13] [INFO] Updated app MPV: managed=true, uiType=uosc
+[2026-06-14 21:55:13] [INFO] [API]Adopt job completed successfully: MPV
+[2026-06-14 21:55:21] [INFO] [SSE] Client disconnected from job stream (total events: 65)
+[2026-06-14 21:55:21] [INFO] Checking for manager updates...
+[2026-06-14 21:55:22] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:22] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 21:55:22] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:22] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:22] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:22] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:22] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:22] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:22] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:22] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:22] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:22] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:22] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:22] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:22] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:22] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:22] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:22] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:22] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:22] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:31] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:31] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:31] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:31] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:31] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:31] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:31] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:31] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:31] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:31] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:31] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:31] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:31] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:31] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:31] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:31] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:31] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:31] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:31] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:31] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:31] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:37] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:37] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:37] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:37] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:37] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:37] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:37] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:37] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:37] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:37] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:37] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:37] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:37] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:37] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:37] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:37] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:37] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:37] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:37] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:37] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:37] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:37] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:37] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:37] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:37] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:37] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:44] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 21:55:44] [INFO] Saved HWA decoder preference: auto
+[2026-06-14 21:55:45] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:46] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:46] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:46] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:46] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:46] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:46] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:46] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:46] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:46] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:46] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:46] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:46] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:46] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:46] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:46] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:46] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:46] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:46] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:46] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:46] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:46] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:46] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:46] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:46] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:46] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:46] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:46] [INFO] Checking for manager updates...
+[2026-06-14 21:55:46] [INFO] Checking for manager updates...
+[2026-06-14 21:55:47] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:47] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 21:55:47] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 21:55:47] [INFO] Checking for manager updates...
+[2026-06-14 21:55:47] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 21:55:47] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 21:55:47] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 21:55:47] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:47] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:47] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:47] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:47] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:47] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:47] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:47] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:47] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:47] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:47] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:47] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:47] [DEBUG] Keyring: Detecting status...
+[2026-06-14 21:55:47] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 21:55:47] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 21:55:47] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 21:55:47] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 21:55:47] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 21:55:47] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 21:55:47] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 21:55:47] [DEBUG] Keyring: Trying file backend
+[2026-06-14 21:55:47] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 21:55:47] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 21:55:47] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:25:36] === MPV.Rocks Installer Log Started ===
+[2026-06-14 22:25:36] Timestamp: 2026-06-14T22:25:36+05:30
+[2026-06-14 22:25:36] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:25:36] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:25:36] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:25:36] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:25:36] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:25:36] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:25:36] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:25:36] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:25:36] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:25:36] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:25:36] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:25:36] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:25:36] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:25:36] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:25:36] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:25:36] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:25:36] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:25:36] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-06-14 22:25:36] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-06-14 22:25:37] [INFO] Initializing version check cache...
+[2026-06-14 22:25:37] [INFO] Detecting installed MPV apps...
+[2026-06-14 22:25:37] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 22:25:37] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 22:25:37] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 22:25:38] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 22:25:38] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 22:25:38] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-06-14 22:25:38] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-06-14 22:25:38] [INFO] Web server listening on 127.0.0.1:6787
+[2026-06-14 22:25:38] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-06-14 22:25:42] [INFO] Checking for manager updates...
+[2026-06-14 22:25:43] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 22:25:43] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:25:43] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:25:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:25:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:25:43] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:25:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:25:43] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:25:43] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:25:43] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:25:43] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:25:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:25:43] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:25:43] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:25:43] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:25:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:25:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:25:43] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:25:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:25:43] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:25:43] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:25:43] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:25:43] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:25:43] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:25:43] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:25:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:26:10] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:26:11] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:26:11] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:26:11] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:26:11] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:26:11] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:26:11] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:26:11] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:26:11] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:11] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:11] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:11] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:11] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:11] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:11] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:26:11] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:26:11] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:26:11] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:26:11] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:26:11] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:26:11] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:11] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:11] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:11] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:11] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:11] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:26:13] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 22:26:13] [INFO] Saved HWA decoder preference: auto
+[2026-06-14 22:26:15] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:26:15] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:26:15] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:26:15] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:26:15] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:26:15] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:26:15] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:26:15] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:26:15] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:15] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:15] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:15] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:15] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:15] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:15] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:26:15] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:26:15] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:26:15] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:26:15] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:26:15] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:26:15] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:26:15] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:26:15] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:26:15] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:26:15] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:26:15] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:28:35] === MPV.Rocks Installer Log Started ===
+[2026-06-14 22:28:35] Timestamp: 2026-06-14T22:28:35+05:30
+[2026-06-14 22:28:35] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:28:35] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:28:35] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:28:35] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:28:35] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:28:35] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:28:35] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:28:35] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:28:35] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:28:35] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:28:35] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:28:35] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:28:35] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:28:35] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:28:35] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:28:35] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:28:35] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:28:35] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-06-14 22:28:35] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-06-14 22:28:36] [INFO] Initializing version check cache...
+[2026-06-14 22:28:36] [INFO] Detecting installed MPV apps...
+[2026-06-14 22:28:36] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 22:28:36] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 22:28:36] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 22:28:36] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 22:28:36] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 22:28:37] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-06-14 22:28:37] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-06-14 22:28:37] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-06-14 22:28:37] [INFO] Web server listening on 127.0.0.1:6787
+[2026-06-14 22:28:37] [INFO] Checking for manager updates...
+[2026-06-14 22:28:37] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 22:28:38] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:28:38] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:28:38] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:28:38] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:28:38] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:28:38] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:28:38] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:28:38] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:28:38] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:28:38] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:28:38] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:28:38] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:28:38] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:28:38] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:28:38] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:28:38] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:28:38] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:28:38] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:28:38] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:28:38] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:28:38] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:28:38] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:28:38] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:28:38] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:28:38] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:38:04] === MPV.Rocks Installer Log Started ===
+[2026-06-14 22:38:04] Timestamp: 2026-06-14T22:38:04+05:30
+[2026-06-14 22:38:04] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:38:04] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:38:04] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:38:04] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:38:04] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:38:04] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:38:04] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:38:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:38:04] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:38:04] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:38:04] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:38:04] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:38:04] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:38:04] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:38:04] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:38:04] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:38:04] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:38:04] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-06-14 22:38:04] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-06-14 22:38:05] [INFO] Initializing version check cache...
+[2026-06-14 22:38:05] [INFO] Detecting installed MPV apps...
+[2026-06-14 22:38:05] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 22:38:05] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 22:38:06] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 22:38:06] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 22:38:06] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 22:38:07] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-06-14 22:38:07] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-06-14 22:38:07] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-06-14 22:38:07] [INFO] Web server listening on 127.0.0.1:6787
+[2026-06-14 22:38:07] [INFO] Checking for manager updates...
+[2026-06-14 22:38:08] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 22:38:09] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:38:09] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:38:09] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:38:09] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:38:09] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:38:09] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:38:09] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:38:09] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:38:09] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:38:09] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:38:09] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:38:09] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:38:09] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:38:09] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:38:09] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:38:09] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:38:09] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:38:09] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:38:09] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:38:09] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:38:09] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:38:09] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:38:09] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:38:09] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:38:09] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:38:29] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:38:55] === MPV.Rocks Installer Log Started ===
+[2026-06-14 22:38:55] Timestamp: 2026-06-14T22:38:55+05:30
+[2026-06-14 22:38:55] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:38:55] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:38:55] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:38:55] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:38:55] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:38:55] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:38:55] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:38:55] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:38:55] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:38:55] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:38:55] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:38:55] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:38:55] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:38:55] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:38:55] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:38:55] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:38:55] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:38:57] [INFO] Initializing version check cache...
+[2026-06-14 22:38:57] [INFO] Detecting installed MPV apps...
+[2026-06-14 22:38:57] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-06-14 22:38:57] [DEBUG] [Detection] Detected package manager family: arch
+[2026-06-14 22:38:57] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-06-14 22:38:58] [INFO] [Detection] Found 1 Package Manager apps
+[2026-06-14 22:38:58] [INFO] [Detection] Total detected apps: 1
+[2026-06-14 22:38:58] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-06-14 22:38:58] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-06-14 22:38:58] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-06-14 22:38:58] [INFO] Web server listening on 127.0.0.1:6787
+[2026-06-14 22:38:59] [INFO] Checking for manager updates...
+[2026-06-14 22:38:59] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-06-14 22:39:00] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:00] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:00] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:00] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:00] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:00] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:00] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:00] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:00] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:00] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:00] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:00] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:00] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:00] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:00] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:00] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:03] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:04] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:04] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:04] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:04] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:04] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:04] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:04] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:04] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:04] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:04] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:04] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:04] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:04] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:04] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:04] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:04] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:04] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:04] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:04] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:04] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:04] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:04] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:04] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:04] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:04] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:05] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:06] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:06] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:06] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:06] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:06] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:06] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:06] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:06] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:06] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:06] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:06] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:06] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:06] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:06] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:06] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:06] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:11] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 22:39:11] [INFO] Saved HWA decoder preference: nvdec,auto
+[2026-06-14 22:39:12] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:12] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:12] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:12] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:12] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:12] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:12] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:12] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:12] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:12] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:12] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:12] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:12] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:12] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:12] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:12] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:12] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:12] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:12] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:12] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:12] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:12] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:12] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:12] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:12] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:12] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:15] [INFO] Config file saved to: ~/.config/mpv/mpv-manager.json
+[2026-06-14 22:39:15] [INFO] Saved HWA decoder preference: nvdec-copy,auto
+[2026-06-14 22:39:17] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:17] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:17] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:17] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:17] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:17] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:17] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:17] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:17] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:17] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:17] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:17] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:17] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:17] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:17] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:17] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:17] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:17] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:17] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:17] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:17] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:17] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:17] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:17] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:17] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:17] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:19] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:19] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:19] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:19] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:19] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:19] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:19] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:19] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:19] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:19] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:19] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:19] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:19] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:19] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:19] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:19] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:19] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:19] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:19] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:19] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:19] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:19] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:19] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:19] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:19] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:19] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:33] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:33] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:33] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:33] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:33] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:33] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:33] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:33] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:33] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:33] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:33] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:33] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:33] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:33] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:33] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:33] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:33] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:33] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:33] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:33] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:33] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:33] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:33] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:33] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:33] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:33] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:35] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:35] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:35] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:35] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:35] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:35] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:35] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:35] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:35] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:35] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:35] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:35] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:35] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:35] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:35] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:35] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:35] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:35] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:35] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:35] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:35] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:35] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:35] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:35] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:35] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:35] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:39] [INFO] [API]Applied hotkey preset: default
+[2026-06-14 22:39:44] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:45] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:45] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:45] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:45] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:45] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:45] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:45] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:45] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:45] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:45] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:45] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:45] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:45] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:45] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:45] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:45] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:45] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:45] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:45] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:45] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:45] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:45] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:45] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:45] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:45] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:51] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:51] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:51] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:51] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:51] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:51] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:51] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:51] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:51] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:51] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:51] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:51] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:51] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:51] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:51] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:51] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:51] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:51] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:53] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-06-14 22:39:53] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:53] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:53] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:53] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:53] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:53] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:53] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:53] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:53] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:53] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:53] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:53] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:53] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:53] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:53] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:53] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:53] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:53] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:53] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:53] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:53] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:53] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:53] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:54] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:54] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:54] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:54] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:54] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:54] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:54] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:54] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:54] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:54] [DEBUG] Keyring: Detecting status...
+[2026-06-14 22:39:54] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-06-14 22:39:54] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-06-14 22:39:54] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-06-14 22:39:54] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-06-14 22:39:54] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-06-14 22:39:54] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying pass backend
+[2026-06-14 22:39:54] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-06-14 22:39:54] [DEBUG] Keyring: Trying file backend
+[2026-06-14 22:39:54] [INFO] Keyring: Successfully opened backend: file
+[2026-06-14 22:39:54] [DEBUG] Keyring: HasPassword check: false
+[2026-06-14 22:39:54] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-06-14 22:40:02] [INFO] Shutdown requested via Web UI
+[2026-06-14 22:40:03] [INFO] Shutting down server
+[2026-06-14 22:40:03] [INFO] Shutting down HTTP server...
+[2026-06-14 22:40:04] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-07-01 21:00:54] === MPV.Rocks Installer Log Started ===
+[2026-07-01 21:00:54] Timestamp: 2026-07-01T21:00:54+05:30
+[2026-07-01 21:00:54] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:00:54] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:00:54] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:00:54] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:00:54] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:00:54] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:00:54] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:00:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:00:54] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:00:54] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:00:54] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:00:54] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:00:54] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:00:54] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:00:54] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:00:54] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:00:54] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:00:54] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-07-01 21:00:54] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-07-01 21:00:55] [INFO] Initializing version check cache...
+[2026-07-01 21:00:55] [INFO] Detecting installed MPV apps...
+[2026-07-01 21:00:55] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-07-01 21:00:55] [DEBUG] [Detection] Detected package manager family: arch
+[2026-07-01 21:00:55] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-07-01 21:00:56] [INFO] [Detection] Found 1 Package Manager apps
+[2026-07-01 21:00:56] [INFO] [Detection] Total detected apps: 1
+[2026-07-01 21:00:56] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-07-01 21:00:56] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-07-01 21:00:56] [INFO] Web server listening on 127.0.0.1:6787
+[2026-07-01 21:00:56] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-07-01 21:00:57] [INFO] Checking for manager updates...
+[2026-07-01 21:00:58] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-07-01 21:00:58] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:00:58] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:00:58] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:00:58] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:00:58] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:00:58] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:00:58] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:00:58] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:00:58] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:00:58] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:00:58] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:00:58] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:00:58] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:00:58] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:00:58] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:00:58] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-07-01 21:00:58] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:00:58] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:00:58] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:00:58] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:00:58] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:00:58] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:00:58] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:00:58] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:00:58] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:01:00] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:01:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:01:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:01:00] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:01:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:01:00] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:01:00] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:00] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:00] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:00] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:00] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:00] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:01:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:01:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:01:00] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:01:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:01:00] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:01:00] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:00] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:00] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:00] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:00] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:01:00] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-07-01 21:01:04] [INFO] Checking for manager updates...
+[2026-07-01 21:01:06] [INFO] Checking for manager updates...
+[2026-07-01 21:01:14] [ERROR] Failed to check for updates: Get "https://mpv.rocks/api/releases.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2026-07-01 21:01:16] [ERROR] Failed to check for updates: Get "https://mpv.rocks/api/releases.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[2026-07-01 21:01:16] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:01:16] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:01:16] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:01:16] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-07-01 21:01:16] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:01:16] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:01:16] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:01:16] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:16] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:16] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:16] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:16] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:16] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:16] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:01:16] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:01:16] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:01:16] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:01:16] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:01:16] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:01:16] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:01:16] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:01:16] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:01:16] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:01:16] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:01:16] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:01:27] [INFO] [API] Checking for app updates...
+[2026-07-01 21:01:27] [INFO] Refreshing version check cache...
+[2026-07-01 21:01:27] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-07-01 21:01:27] [DEBUG] [Detection] Detected package manager family: arch
+[2026-07-01 21:01:28] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-07-01 21:01:28] [INFO] [Detection] Found 1 Package Manager apps
+[2026-07-01 21:01:28] [INFO] [Detection] Total detected apps: 1
+[2026-07-01 21:01:28] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-07-01 21:01:28] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-07-01 21:02:01] === MPV.Rocks Installer Log Started ===
+[2026-07-01 21:02:01] Timestamp: 2026-07-01T21:02:01+05:30
+[2026-07-01 21:02:01] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:02:01] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:02:01] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:02:01] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:02:01] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:02:01] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:02:01] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:02:01] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:01] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:01] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:01] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:01] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:01] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:01] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:01] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:01] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:01] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:02:03] [INFO] Initializing version check cache...
+[2026-07-01 21:02:03] [INFO] Detecting installed MPV apps...
+[2026-07-01 21:02:03] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-07-01 21:02:03] [DEBUG] [Detection] Detected package manager family: arch
+[2026-07-01 21:02:03] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-07-01 21:02:04] [INFO] [Detection] Found 1 Package Manager apps
+[2026-07-01 21:02:04] [INFO] [Detection] Total detected apps: 1
+[2026-07-01 21:02:04] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-07-01 21:02:04] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-07-01 21:02:04] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-07-01 21:02:04] [INFO] Web server listening on 127.0.0.1:6787
+[2026-07-01 21:02:04] [INFO] Checking for manager updates...
+[2026-07-01 21:02:05] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-07-01 21:02:05] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:02:05] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:02:05] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:02:05] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-07-01 21:02:05] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:02:05] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:02:05] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:02:05] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:05] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:05] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:05] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:05] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:05] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:05] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:02:05] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:02:05] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:02:05] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:02:05] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:02:05] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:02:05] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:05] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:05] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:05] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:05] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:05] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:02:06] [INFO] Checking for manager updates...
+[2026-07-01 21:02:06] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-07-01 21:02:06] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:02:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:02:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:02:06] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:02:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:02:06] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:02:06] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:06] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:06] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:06] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:06] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:06] [DEBUG] Keyring: Detecting status...
+[2026-07-01 21:02:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-07-01 21:02:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-07-01 21:02:06] [DEBUG] Keyring: No running process found matching 'gnome-keyring-d'
+[2026-07-01 21:02:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = false
+[2026-07-01 21:02:06] [DEBUG] Keyring: checkDaemonRunning(file) = true
+[2026-07-01 21:02:06] [DEBUG] Keyring: Active backend: file, daemon running: true
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend secret-service failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying KWallet backend with kdewallet/mpv-manager folder
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend kwallet failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying pass backend
+[2026-07-01 21:02:06] [DEBUG] Keyring: Backend pass failed: Specified keyring backend not available
+[2026-07-01 21:02:06] [DEBUG] Keyring: Trying file backend
+[2026-07-01 21:02:06] [INFO] Keyring: Successfully opened backend: file
+[2026-07-01 21:02:06] [DEBUG] Keyring: HasPassword check: false
+[2026-07-01 21:02:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-07-01 21:02:06] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-07-01 21:02:13] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-07-01 21:02:14] [INFO] [SSE] Client disconnected from job stream (total events: 0)
