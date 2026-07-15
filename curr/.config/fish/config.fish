@@ -16,3 +16,6 @@ zoxide init fish | source
 # aliases
 alias cd=z
 alias n=nvim
+
+# env
+set RUSTC_WRAPPER sccache
