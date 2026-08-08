@@ -15,7 +15,11 @@ zoxide init fish | source
 
 # aliases
 alias cd=z
-alias n=nvim
+alias n="nvim"
+alias gs="git status"
+alias gc="git commit"
+alias gp="git push"
+alias c="opencode"
 
 # env
 set RUSTC_WRAPPER sccache

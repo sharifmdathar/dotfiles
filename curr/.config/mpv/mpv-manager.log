@@ -1544,3 +1544,670 @@
 [2026-07-01 21:02:06] [INFO] [SSE] Client connected to job stream: job_id=
 [2026-07-01 21:02:13] [INFO] [SSE] Client disconnected from job stream (total events: 0)
 [2026-07-01 21:02:14] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:25:26] === MPV.Rocks Installer Log Started ===
+[2026-08-09 04:25:26] Timestamp: 2026-08-09T04:25:26+05:30
+[2026-08-09 04:25:26] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:25:26] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:25:26] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:25:26] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:25:26] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:25:26] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:25:26] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:26] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:26] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:26] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:25:26] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel" (brand: intel), using fallback
+[2026-08-09 04:25:26] [DEBUG] [GPU] HWA codec detection failed on Linux (no vainfo, vdpauinfo, or GPU match), falling back to 'unknown'
+[2026-08-09 04:25:28] [INFO] Initializing version check cache...
+[2026-08-09 04:25:28] [INFO] Detecting installed MPV apps...
+[2026-08-09 04:25:28] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:25:28] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:25:28] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-08-09 04:25:28] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:25:28] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:25:29] [INFO] Version check cache initialized with 2 updates and 1 package versions
+[2026-08-09 04:25:29] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-08-09 04:25:29] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-08-09 04:25:29] [INFO] Web server listening on 127.0.0.1:6787
+[2026-08-09 04:25:29] [INFO] Checking for manager updates...
+[2026-08-09 04:25:30] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-08-09 04:25:30] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:25:30] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:25:30] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:25:30] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:25:30] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:25:30] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:25:30] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:30] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:30] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:30] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:25:30] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:30] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:30] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:30] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:25:30] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:25:30] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:25:30] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:25:30] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:25:30] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:25:30] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:30] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:30] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:30] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:25:30] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:25:36] [INFO] [API] Checking for app updates...
+[2026-08-09 04:25:36] [INFO] Refreshing version check cache...
+[2026-08-09 04:25:36] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:25:36] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:25:36] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-08-09 04:25:36] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:25:36] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:25:36] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-08-09 04:25:36] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:25:39] [COMMAND] /usr/bin/unzip -o -q ~/.config/mpv/uosc.zip -d ~/.config/mpv
+[2026-08-09 04:25:39] [INFO] Command completed successfully
+[2026-08-09 04:25:40] [INFO] [API] Checking for app updates...
+[2026-08-09 04:25:40] [INFO] Refreshing version check cache...
+[2026-08-09 04:25:40] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:25:40] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:25:40] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-08-09 04:25:40] [INFO] [API]Installation job completed: 1786229737598347993
+[2026-08-09 04:25:40] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:25:40] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:25:41] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-08-09 04:25:41] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:25:42] [INFO] Checking for manager updates...
+[2026-08-09 04:25:42] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-08-09 04:25:42] [INFO] [SSE] Client disconnected from job stream (total events: 39)
+[2026-08-09 04:25:42] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:25:42] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:25:42] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:25:42] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:25:42] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:25:42] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:25:42] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:42] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:42] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:42] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:25:42] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:42] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:42] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:42] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:25:42] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:25:42] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:25:42] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:25:42] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:25:42] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:25:42] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:42] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:42] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:25:42] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:25:42] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:25:49] [INFO] [API]Install job request received: method_id=mpv-package, ui_type=uosc
+[2026-08-09 04:25:49] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:25:49] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:25:49] [DEBUG] Keyring: Retrieving password from backend: secret-service
+[2026-08-09 04:25:49] [DEBUG] Keyring: No password stored
+[2026-08-09 04:25:49] [DEBUG] RunSudoCommand: No password stored in keyring, falling back to regular sudo
+[2026-08-09 04:25:49] [COMMAND] /usr/bin/sudo pacman -S --noconfirm mpv
+[2026-08-09 04:25:52] [INFO] [API] Checking for app updates...
+[2026-08-09 04:25:52] [INFO] Refreshing version check cache...
+[2026-08-09 04:25:52] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:25:52] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:25:52] [DEBUG] [Detection] Found MPV Package: 0.41.0-3.1
+[2026-08-09 04:25:52] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:25:52] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:25:53] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-08-09 04:25:53] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:25:59] [ERROR-OUTPUT] error: failed to init transaction (unable to lock database)
+[2026-08-09 04:25:59] [ERROR-OUTPUT] error: could not lock database: File exists
+[2026-08-09 04:25:59] [ERROR-OUTPUT]   if you're sure a package manager is not already
+[2026-08-09 04:25:59] [ERROR-OUTPUT]   running, you can remove /var/lib/pacman/db.lck
+[2026-08-09 04:25:59] [OUTPUT] error: failed to init transaction (unable to lock database)
+error: could not lock database: File exists
+  if you're sure a package manager is not already
+  running, you can remove /var/lib/pacman/db.lck
+error: failed to init transaction (unable to lock database)
+error: could not lock database: File exists
+  if you're sure a package manager is not already
+  running, you can remove /var/lib/pacman/db.lck
+
+[2026-08-09 04:25:59] [ERROR] Command failed: /usr/bin/sudo pacman -S --noconfirm mpv - Error: exit status 1
+[2026-08-09 04:25:59] [ERROR] [API]Installation job failed: exit status 1
+[2026-08-09 04:28:45] [INFO] [API] Checking for app updates...
+[2026-08-09 04:28:45] [INFO] Refreshing version check cache...
+[2026-08-09 04:28:45] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:28:45] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:28:45] [DEBUG] [Detection] Found MPV Package: 0.41.0-4.1
+[2026-08-09 04:28:46] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:28:46] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:28:46] [INFO] [Detection] Updating version for mpv-package: 0.41.0-3.1 -> 0.41.0-4.1
+[2026-08-09 04:28:46] [INFO] Config file saved to: /home/ball/.config/mpv/mpv-manager.json
+[2026-08-09 04:28:46] [INFO] Adding app to installed_apps: MPV
+[2026-08-09 04:28:46] [INFO] App type: app, Method: mpv-package
+[2026-08-09 04:28:46] [INFO] Config file saved to: /home/ball/.config/mpv/mpv-manager.json
+[2026-08-09 04:28:46] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-08-09 04:28:46] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:28:49] [INFO] Checking for manager updates...
+[2026-08-09 04:28:50] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-08-09 04:28:50] [INFO] [SSE] Client disconnected from job stream (total events: 12)
+[2026-08-09 04:28:51] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:28:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:28:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:28:51] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:28:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:28:51] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:28:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:28:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:28:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:28:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:28:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:28:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:28:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:28:51] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:28:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:28:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:28:51] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:28:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:28:51] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:28:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:28:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:28:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:28:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:28:51] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:28:56] [INFO] [API] Checking for app updates...
+[2026-08-09 04:28:56] [INFO] Refreshing version check cache...
+[2026-08-09 04:28:56] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:28:56] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:28:56] [DEBUG] [Detection] Found MPV Package: 0.41.0-4.1
+[2026-08-09 04:28:57] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:28:57] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:28:57] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-08-09 04:28:57] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:29:00] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:00] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:00] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:00] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:00] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:00] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:00] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:00] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:00] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:00] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:00] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:00] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:00] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:00] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:00] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:00] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:00] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:00] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:04] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:04] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:04] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:04] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:04] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:04] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:04] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:04] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:04] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:04] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:04] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:04] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:04] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:04] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:04] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:04] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:04] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:04] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:04] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:04] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:04] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:04] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:15] [INFO] Checking for manager updates...
+[2026-08-09 04:29:16] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-08-09 04:29:16] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:16] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:16] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:16] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:16] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:16] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:16] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:16] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:16] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:16] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:16] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:16] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:16] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:16] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:16] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:16] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:16] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:16] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:16] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:16] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:16] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:16] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:22] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:22] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:22] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:22] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:22] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:22] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:22] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:22] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:22] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:22] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:22] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:22] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:22] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:30] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:29:46] === MPV.Rocks Installer Log Started ===
+[2026-08-09 04:29:46] Timestamp: 2026-08-09T04:29:46+05:30
+[2026-08-09 04:29:46] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:46] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:46] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:46] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:46] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:46] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:46] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:46] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:46] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:46] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:47] [INFO] Initializing version check cache...
+[2026-08-09 04:29:47] [INFO] Detecting installed MPV apps...
+[2026-08-09 04:29:47] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:29:47] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:29:47] [DEBUG] [Detection] Found MPV Package: 0.41.0-4.1
+[2026-08-09 04:29:47] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:29:47] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:29:47] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-08-09 04:29:47] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-08-09 04:29:47] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-08-09 04:29:47] [INFO] Web server listening on 127.0.0.1:6787
+[2026-08-09 04:29:48] [INFO] Checking for manager updates...
+[2026-08-09 04:29:49] [INFO] Current version: 1.2.0, Latest version: 1.2.0
+[2026-08-09 04:29:49] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:49] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:49] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:49] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:49] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:49] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:49] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:49] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:49] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:49] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:49] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:49] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:49] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:49] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:49] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:49] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:49] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:49] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:49] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:49] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:49] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:49] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:49] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:49] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:55] [INFO] [API] Checking for app updates...
+[2026-08-09 04:29:55] [INFO] Refreshing version check cache...
+[2026-08-09 04:29:55] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-08-09 04:29:55] [DEBUG] [Detection] Detected package manager family: arch
+[2026-08-09 04:29:55] [DEBUG] [Detection] Found MPV Package: 0.41.0-4.1
+[2026-08-09 04:29:56] [INFO] [Detection] Found 1 Package Manager apps
+[2026-08-09 04:29:56] [INFO] [Detection] Total detected apps: 1
+[2026-08-09 04:29:56] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-08-09 04:29:56] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-08-09 04:29:56] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:56] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:56] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:56] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:56] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:56] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:56] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:56] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:56] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:56] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:56] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:56] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:56] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:56] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:56] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:56] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:56] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:56] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:29:57] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:57] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:57] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:57] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:57] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:57] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:57] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:57] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:57] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:57] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:57] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:57] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:57] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:57] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:29:57] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:29:57] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:29:57] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:29:57] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:29:57] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:29:57] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:29:57] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:29:57] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:29:57] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:29:57] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:30:56] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:30:57] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:31:48] [INFO] Config file saved to: /home/ball/.config/mpv/mpv-manager.json
+[2026-08-09 04:31:48] [INFO] Saved HWA decoder preference: nvdec,auto
+[2026-08-09 04:31:51] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:31:51] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:31:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:31:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:31:51] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:31:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:31:51] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:31:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:31:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:31:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:31:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:31:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:31:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:31:51] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:31:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:31:51] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:31:51] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:31:51] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:31:51] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:31:51] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:31:51] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:31:51] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:31:51] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:31:51] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:31:51] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:06] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:06] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:06] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:06] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:06] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:09] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:32:10] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:10] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:10] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:10] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:10] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:10] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:10] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:10] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:10] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:10] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:10] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:10] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:10] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:10] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:10] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:10] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:10] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:10] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:10] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:10] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:10] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:10] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:10] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:10] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:19] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:19] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:19] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:19] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:19] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:19] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:19] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:19] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:19] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:19] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:19] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:19] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:19] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:19] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:19] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:19] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:19] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:19] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:19] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:19] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:19] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:19] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:21] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:21] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:21] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:21] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:21] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:21] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:21] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:21] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:21] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:21] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:21] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:21] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:21] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:21] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:21] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:21] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:21] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:21] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:21] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:21] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:21] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:21] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:21] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:21] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:28] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:28] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:28] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:28] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:28] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:28] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:28] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:28] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:28] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:28] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:28] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:28] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:28] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:28] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:28] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:28] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:28] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:28] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:28] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:28] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:28] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:28] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:28] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:28] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:32:33] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:33] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:33] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:33] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:33] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:33] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:33] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:33] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:33] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:33] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:33] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:33] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:32:33] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:32:33] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:32:33] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:32:33] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:32:33] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:32:33] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:32:33] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:32:33] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:32:33] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:32:33] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:33:05] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:18] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:20] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:28] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:33] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:33:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:33:43] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:33:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:33:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:33:43] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:33:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:33:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:33:43] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:33:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detecting status...
+[2026-08-09 04:33:43] [DEBUG] Keyring: Detected distro=arch, desktopEnv=niri
+[2026-08-09 04:33:43] [DEBUG] Keyring: Available backends: [secret-service file]
+[2026-08-09 04:33:43] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-08-09 04:33:43] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-08-09 04:33:43] [DEBUG] Keyring: Trying SecretService backend
+[2026-08-09 04:33:43] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-08-09 04:33:43] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-08-09 04:33:43] [DEBUG] Keyring: HasPassword check: false
+[2026-08-09 04:33:43] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-08-09 04:33:53] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-08-09 04:33:53] [INFO] [SSE] Client disconnected from job stream (total events: 0)

@@ -8,7 +8,7 @@
       "install_method": "mpv-package",
       "install_path": "/usr/sbin/mpv",
       "installed_date": "2026-06-14",
-      "app_version": "0.41.0-3.1",
+      "app_version": "0.41.0-4.1",
       "update_available": false,
       "ui_type": "uosc",
       "managed": true
@@ -18,10 +18,10 @@
   "manager_bin_path": "",
   "install_path": "",
   "mpv_config_path": "~/.config/mpv",
-  "uosc_version": "5.12.0",
+  "uosc_version": "5.13.0",
   "modernz_version": "",
   "ffmpeg_version": "",
   "current_ui_type": "",
   "create_manager_shortcut": false,
-  "hwa_decoder_preference": "nvdec-copy,auto"
+  "hwa_decoder_preference": "nvdec,auto"
 }

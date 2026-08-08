@@ -1,8 +1,27 @@
 {
-  "currentThemeName": "pink",
-  "currentThemeCategory": "generic",
-  "customThemeFile": "",
-  "registryThemeVariants": {},
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
+  "customThemeFile": "/home/ball/.config/DankMaterialShell/themes/astralJourney/theme.json",
+  "registryThemeVariants": {
+    "amoledBlack": {
+      "dark": {
+        "flavor": "black",
+        "accent": "pink"
+      }
+    },
+    "astralJourney": {
+      "dark": {
+        "flavor": "blackhole",
+        "accent": "coral"
+      }
+    },
+    "bru": {
+      "dark": {
+        "flavor": "espresso",
+        "accent": "orange"
+      }
+    }
+  },
   "matugenScheme": "scheme-expressive",
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
@@ -32,7 +51,7 @@
   "firstDayOfWeek": -1,
   "showWeekNumber": false,
   "calendarBackend": "auto",
-  "clockFormat": "auto",
+  "clockFormat": "24h",
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
@@ -154,6 +173,16 @@
       "id": "darkMode",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "colorPicker",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "builtin_display_profiles",
+      "enabled": true,
+      "width": 50
     }
   ],
   "showWorkspaceIndex": true,
@@ -164,7 +193,7 @@
   "workspaceDragReorder": true,
   "maxWorkspaceIcons": 3,
   "workspaceAppIconSizeOffset": 0,
-  "groupWorkspaceApps": true,
+  "groupWorkspaceApps": false,
   "groupActiveWorkspaceApps": false,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": true,
@@ -366,24 +395,24 @@
   "acLockTimeout": 0,
   "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
-  "acProfileName": "",
+  "acProfileName": "2",
   "acPostLockMonitorTimeout": 0,
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
   "batterySuspendBehavior": 0,
-  "batteryProfileName": "",
+  "batteryProfileName": "0",
   "batteryPostLockMonitorTimeout": 0,
   "batteryChargeLimit": 100,
   "batteryNotifyChargeLimit": false,
   "batteryCriticalThreshold": 10,
   "batteryNotifyCritical": true,
-  "batteryLowThreshold": 20,
-  "batteryNotifyLow": false,
+  "batteryLowThreshold": 30,
+  "batteryNotifyLow": true,
   "batteryChargeLimitNotificationType": 0,
   "batteryLowNotificationType": 0,
   "batteryCriticalNotificationType": 1,
-  "batteryAutoPowerSaver": false,
+  "batteryAutoPowerSaver": true,
   "lockBeforeSuspend": true,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
@@ -391,15 +420,6 @@
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
-  "brightnessDevicePins": {},
-  "wifiNetworkPins": {},
-  "bluetoothDevicePins": {
-    "preferredDevice": [
-      "86:41:97:54:1E:CF"
-    ]
-  },
-  "audioInputDevicePins": {},
-  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -542,7 +562,8 @@
     "poweroff",
     "lock",
     "suspend",
-    "restart"
+    "restart",
+    "hibernate"
   ],
   "powerMenuDefaultAction": "logout",
   "powerMenuGridLayout": false,
@@ -553,7 +574,7 @@
   "customPowerActionReboot": "",
   "customPowerActionPowerOff": "",
   "updaterHideWidget": true,
-  "updaterCheckOnStart": false,
+  "updaterCheckOnStart": true,
   "updaterUseCustomCommand": false,
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
@@ -562,14 +583,22 @@
   "updaterAllowAUR": true,
   "updaterIgnoredPackages": [],
   "displayNameMode": "system",
-  "screenPreferences": {},
-  "showOnLastDisplay": {},
+  "screenPreferences": {
+    "toast": [
+      "all"
+    ]
+  },
+  "showOnLastDisplay": {
+    "toast": true
+  },
   "niriOutputSettings": {
     "eDP-1": {}
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
-  "activeDisplayProfile": {},
+  "activeDisplayProfile": {
+    "niri": "profile_1786229555149_07i9ebt"
+  },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
   "displaySnapToEdge": true,
@@ -608,8 +637,17 @@
         }
       ],
       "rightWidgets": [
+        {
+          "id": "privacyIndicator",
+          "enabled": true
+        },
         "systemTray",
         "clipboard",
+        {
+          "id": "cpuTemp",
+          "enabled": true,
+          "minimumWidth": true
+        },
         "cpuUsage",
         {
           "id": "memUsage",
@@ -659,7 +697,7 @@
       "autoHide": false,
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
-      "openOnOverview": false,
+      "openOnOverview": true,
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
@@ -671,7 +709,9 @@
       "shadowOpacity": 60,
       "shadowColorMode": "text",
       "shadowCustomColor": "#000000",
-      "clickThrough": false
+      "clickThrough": false,
+      "useOverlayLayer": false,
+      "hoverPopouts": false
     }
   ],
   "desktopClockEnabled": false,
@@ -743,11 +783,41 @@
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
   "desktopWidgetGridSettings": {},
-  "desktopWidgetInstances": [],
+  "desktopWidgetInstances": [
+    {
+      "id": "dw_1786228812418_baul3ccxn",
+      "widgetType": "desktopClock",
+      "name": "Desktop Clock",
+      "enabled": true,
+      "config": {
+        "style": "stacked",
+        "transparency": 0.8,
+        "colorMode": "primary",
+        "customColor": "#ffffff",
+        "showDate": true,
+        "showAnalogNumbers": false,
+        "showAnalogSeconds": true,
+        "displayPreferences": [
+          "all"
+        ]
+      },
+      "positions": {
+        "eDP-1": {
+          "width": 200,
+          "height": 200,
+          "x": 659.2109375,
+          "y": 313.046875
+        }
+      }
+    }
+  ],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
       "trigger": "?"
+    },
+    "dms_clipboard_search": {
+      "trigger": "cb"
     }
   },
   "clipboardClickToPaste": false,
@@ -780,5 +850,5 @@
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
   "frameBarInsetPadding": -1,
-  "configVersion": 12
+  "configVersion": 13
 }
