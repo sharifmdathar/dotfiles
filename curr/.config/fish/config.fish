@@ -23,3 +23,12 @@ alias c="opencode"
 
 # env
 set RUSTC_WRAPPER sccache
+
+# pnpm
+set -gx PNPM_HOME "/home/ball/.local/share/pnpm"
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end
+
+mise activate fish | source   

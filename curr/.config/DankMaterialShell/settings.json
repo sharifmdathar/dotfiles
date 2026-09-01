@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "dynamic",
-  "currentThemeCategory": "dynamic",
+  "currentThemeName": "pink",
+  "currentThemeCategory": "generic",
   "customThemeFile": "/home/ball/.config/DankMaterialShell/themes/astralJourney/theme.json",
   "registryThemeVariants": {
     "amoledBlack": {
@@ -22,7 +22,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-expressive",
+  "matugenScheme": "scheme-tonal-spot",
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
@@ -55,7 +55,7 @@
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
-  "windSpeedUnit": "kmh",
+  "windSpeedUnit": "ms",
   "nightModeEnabled": false,
   "animationSpeed": 0,
   "customAnimationDuration": 200,
@@ -341,7 +341,7 @@
   "iconThemeDark": "System Default",
   "iconThemeLight": "System Default",
   "iconThemePerMode": false,
-  "lastAppliedIconTheme": "",
+  "lastAppliedIconTheme": "Adwaita",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -400,7 +400,7 @@
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
-  "batterySuspendBehavior": 0,
+  "batterySuspendBehavior": 2,
   "batteryProfileName": "0",
   "batteryPostLockMonitorTimeout": 0,
   "batteryChargeLimit": 100,
@@ -618,13 +618,13 @@
         "workspaceSwitcher",
         {
           "id": "focusedWindow",
-          "enabled": true,
+          "enabled": false,
           "focusedWindowCompactMode": false
         }
       ],
       "centerWidgets": [
         {
-          "id": "weather",
+          "id": "music",
           "enabled": true
         },
         {
@@ -632,7 +632,7 @@
           "enabled": true
         },
         {
-          "id": "music",
+          "id": "weather",
           "enabled": true
         }
       ],
@@ -711,7 +711,8 @@
       "shadowCustomColor": "#000000",
       "clickThrough": false,
       "useOverlayLayer": false,
-      "hoverPopouts": false
+      "hoverPopouts": false,
+      "barInsetPadding": 4
     }
   ],
   "desktopClockEnabled": false,
@@ -803,10 +804,10 @@
       },
       "positions": {
         "eDP-1": {
-          "width": 200,
-          "height": 200,
-          "x": 659.2109375,
-          "y": 313.046875
+          "width": 142.00390625,
+          "height": 206.640625,
+          "x": 712.66796875,
+          "y": 356.921875
         }
       }
     }
