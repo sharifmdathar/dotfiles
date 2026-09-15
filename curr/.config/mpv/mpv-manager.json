@@ -3,15 +3,27 @@
   "auto_update": false,
   "installed_apps": [
     {
+      "id": "app-198825891150e1c51703a3f10118f1d3c43d60565759c1e810f8801437d2b32f",
       "app_name": "MPV",
       "app_type": "app",
       "install_method": "mpv-package",
       "install_path": "/usr/sbin/mpv",
       "installed_date": "2026-06-14",
-      "app_version": "0.41.0-4.1",
+      "app_version": "0.41.0-6.1",
       "update_available": false,
       "ui_type": "uosc",
       "managed": true
+    },
+    {
+      "id": "app-3bdc315d7aaaa6f698f8512220b4b85c6b0ce0392603b4a8428d4fd8583a7bf3",
+      "app_name": "MPV",
+      "app_type": "app",
+      "install_method": "mpv-package",
+      "install_path": "/usr/bin/mpv",
+      "installed_date": "2026-09-15",
+      "app_version": "0.41.0-6.1",
+      "update_available": false,
+      "managed": false
     }
   ],
   "manager_in_path": false,

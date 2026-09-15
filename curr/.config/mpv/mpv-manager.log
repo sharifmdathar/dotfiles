@@ -2211,3 +2211,426 @@ error: could not lock database: File exists
 [2026-08-09 04:33:43] [DEBUG] Keyring: Status complete - hasPassword: false
 [2026-08-09 04:33:53] [INFO] [SSE] Client disconnected from job stream (total events: 0)
 [2026-08-09 04:33:53] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:19:10] === MPV.Rocks Installer Log Started ===
+[2026-09-15 22:19:10] Timestamp: 2026-09-15T22:19:10+05:30
+[2026-09-15 22:19:10] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:10] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:10] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:10] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:10] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:10] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:10] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:10] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:10] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:10] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:10] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:10] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:12] [INFO] Initializing version check cache...
+[2026-09-15 22:19:12] [INFO] Detecting installed MPV apps...
+[2026-09-15 22:19:12] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-09-15 22:19:12] [DEBUG] [Detection] Detected package manager family: arch
+[2026-09-15 22:19:12] [DEBUG] [Detection] Flatpak not available
+[2026-09-15 22:19:12] [DEBUG] [Detection] Found MPV Package: 0.41.0-6.1
+[2026-09-15 22:19:12] [INFO] [Detection] Found 1 Package Manager apps
+[2026-09-15 22:19:12] [INFO] [Detection] Total detected apps: 1
+[2026-09-15 22:19:12] [INFO] [Detection] Updating version for mpv-package: 0.41.0-4.1 -> 0.41.0-6.1
+[2026-09-15 22:19:12] [INFO] Config file saved to: /home/doormat/.config/mpv/mpv-manager.json
+[2026-09-15 22:19:12] [INFO] Adding app to installed_apps: MPV
+[2026-09-15 22:19:12] [INFO] App type: app, Method: mpv-package
+[2026-09-15 22:19:12] [INFO] Config file saved to: /home/doormat/.config/mpv/mpv-manager.json
+[2026-09-15 22:19:12] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-09-15 22:19:12] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-09-15 22:19:12] [INFO] Web server listening on 127.0.0.1:6787
+[2026-09-15 22:19:12] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-09-15 22:19:12] [INFO] Checking for manager updates...
+[2026-09-15 22:19:13] [INFO] Current version: 1.2.0, Latest version: 1.3.0
+[2026-09-15 22:19:13] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:13] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:13] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:13] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:13] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:13] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:13] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:13] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:13] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:13] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:13] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:19:13] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:13] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:13] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:13] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:13] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:13] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:13] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:13] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:13] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:13] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:13] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:13] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:23] [INFO] [API] Manager update request received
+[2026-09-15 22:19:23] [INFO] Checking for manager updates...
+[2026-09-15 22:19:23] [INFO] Current version: 1.2.0, Latest version: 1.3.0
+[2026-09-15 22:19:23] [INFO] [API] Update available: 1.3.0
+[2026-09-15 22:19:23] [INFO] [API] Starting manager self-update...
+[2026-09-15 22:19:23] [INFO] Starting manager self-update with progress...
+[2026-09-15 22:19:23] [INFO] Checking for manager updates...
+[2026-09-15 22:19:24] [INFO] Current version: 1.2.0, Latest version: 1.3.0
+[2026-09-15 22:19:24] [INFO] Update available: 1.3.0
+[2026-09-15 22:19:24] [DEBUG] Downloading file from: https://gitgud.io/api/v4/projects/mike%2Fmpv-manager/packages/generic/mpv-manager/v1.3.0/mpv-manager-linux-amd64 (max retries: 3)
+[2026-09-15 22:19:25] [INFO] Update progress: 27792/29544608 bytes
+[2026-09-15 22:19:25] [INFO] Update progress: 60560/29544608 bytes
+[2026-09-15 22:19:26] [INFO] Update progress: 89232/29544608 bytes
+[2026-09-15 22:19:26] [INFO] Update progress: 113808/29544608 bytes
+[2026-09-15 22:19:27] [INFO] Update progress: 150672/29544608 bytes
+[2026-09-15 22:19:27] [INFO] Update progress: 191632/29544608 bytes
+[2026-09-15 22:19:28] [INFO] Update progress: 237568/29544608 bytes
+[2026-09-15 22:19:28] [INFO] Update progress: 286720/29544608 bytes
+[2026-09-15 22:19:29] [INFO] Update progress: 327680/29544608 bytes
+[2026-09-15 22:19:29] [INFO] Update progress: 372736/29544608 bytes
+[2026-09-15 22:19:30] [INFO] Update progress: 421888/29544608 bytes
+[2026-09-15 22:19:31] [INFO] Update progress: 450560/29544608 bytes
+[2026-09-15 22:19:31] [INFO] Update progress: 520192/29544608 bytes
+[2026-09-15 22:19:32] [INFO] Update progress: 565248/29544608 bytes
+[2026-09-15 22:19:32] [INFO] Update progress: 618496/29544608 bytes
+[2026-09-15 22:19:33] [INFO] Update progress: 667648/29544608 bytes
+[2026-09-15 22:19:33] [INFO] Update progress: 720896/29544608 bytes
+[2026-09-15 22:19:34] [INFO] Update progress: 774144/29544608 bytes
+[2026-09-15 22:19:34] [INFO] Update progress: 827392/29544608 bytes
+[2026-09-15 22:19:35] [INFO] Update progress: 884736/29544608 bytes
+[2026-09-15 22:19:35] [INFO] Update progress: 950272/29544608 bytes
+[2026-09-15 22:19:36] [INFO] Update progress: 1007616/29544608 bytes
+[2026-09-15 22:19:36] [INFO] Update progress: 1060864/29544608 bytes
+[2026-09-15 22:19:37] [INFO] Update progress: 1118208/29544608 bytes
+[2026-09-15 22:19:37] [INFO] Update progress: 1179648/29544608 bytes
+[2026-09-15 22:19:38] [INFO] Update progress: 1257472/29544608 bytes
+[2026-09-15 22:19:38] [INFO] Update progress: 1331200/29544608 bytes
+[2026-09-15 22:19:39] [INFO] Update progress: 1376256/29544608 bytes
+[2026-09-15 22:19:39] [INFO] Update progress: 1449984/29544608 bytes
+[2026-09-15 22:19:40] [INFO] Update progress: 1478656/29544608 bytes
+[2026-09-15 22:19:41] [INFO] Update progress: 1548288/29544608 bytes
+[2026-09-15 22:19:41] [INFO] Update progress: 1589248/29544608 bytes
+[2026-09-15 22:19:42] [INFO] Update progress: 1626112/29544608 bytes
+[2026-09-15 22:19:42] [INFO] Update progress: 1662976/29544608 bytes
+[2026-09-15 22:19:43] [INFO] Update progress: 1699840/29544608 bytes
+[2026-09-15 22:19:43] [INFO] Update progress: 1728512/29544608 bytes
+[2026-09-15 22:19:44] [INFO] [API] Checking for app updates...
+[2026-09-15 22:19:44] [INFO] Refreshing version check cache...
+[2026-09-15 22:19:44] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-09-15 22:19:44] [DEBUG] [Detection] Detected package manager family: arch
+[2026-09-15 22:19:44] [DEBUG] [Detection] Flatpak not available
+[2026-09-15 22:19:44] [INFO] Update progress: 1765376/29544608 bytes
+[2026-09-15 22:19:44] [DEBUG] [Detection] Found MPV Package: 0.41.0-6.1
+[2026-09-15 22:19:44] [INFO] [Detection] Found 1 Package Manager apps
+[2026-09-15 22:19:44] [INFO] [Detection] Total detected apps: 1
+[2026-09-15 22:19:44] [INFO] Update progress: 1802240/29544608 bytes
+[2026-09-15 22:19:45] [INFO] Version check cache refreshed: 1 updates, 1 package versions
+[2026-09-15 22:19:45] [INFO] [API] Check updates complete, adding 1500ms delay for visual feedback...
+[2026-09-15 22:19:45] [INFO] Update progress: 1843200/29544608 bytes
+[2026-09-15 22:19:45] [INFO] Update progress: 1880064/29544608 bytes
+[2026-09-15 22:19:46] [INFO] Update progress: 1916928/29544608 bytes
+[2026-09-15 22:19:46] [INFO] Update progress: 1957888/29544608 bytes
+[2026-09-15 22:19:47] [INFO] Update progress: 2007040/29544608 bytes
+[2026-09-15 22:19:48] [INFO] Update progress: 2060288/29544608 bytes
+[2026-09-15 22:19:48] [INFO] Update progress: 2101248/29544608 bytes
+[2026-09-15 22:19:49] [INFO] Update progress: 2154496/29544608 bytes
+[2026-09-15 22:19:50] [INFO] Update progress: 2199552/29544608 bytes
+[2026-09-15 22:19:50] [INFO] Update progress: 2248704/29544608 bytes
+[2026-09-15 22:19:51] [INFO] Update progress: 2293760/29544608 bytes
+[2026-09-15 22:19:51] [INFO] Update progress: 2355200/29544608 bytes
+[2026-09-15 22:19:52] [INFO] Update progress: 2383872/29544608 bytes
+[2026-09-15 22:19:53] [INFO] Update progress: 2449408/29544608 bytes
+[2026-09-15 22:19:53] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:53] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:53] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:53] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:53] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:53] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:19:53] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:53] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:53] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:53] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:53] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:53] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:53] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:53] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:53] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:53] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:53] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:53] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:53] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:53] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:53] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:53] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:53] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:53] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:53] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:53] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:53] [INFO] Update progress: 2490368/29544608 bytes
+[2026-09-15 22:19:54] [INFO] Update progress: 2543616/29544608 bytes
+[2026-09-15 22:19:54] [INFO] Update progress: 2588672/29544608 bytes
+[2026-09-15 22:19:54] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:54] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:54] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:54] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:54] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:54] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:19:54] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:54] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:54] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:54] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:54] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:54] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:54] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:54] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:54] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:54] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:54] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:54] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:54] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:54] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:54] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:54] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:54] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:54] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:54] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:54] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:55] [INFO] Update progress: 2637824/29544608 bytes
+[2026-09-15 22:19:55] [INFO] Update progress: 2682880/29544608 bytes
+[2026-09-15 22:19:56] [INFO] Update progress: 2732032/29544608 bytes
+[2026-09-15 22:19:56] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:56] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:56] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:56] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:56] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:56] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:19:56] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:56] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:56] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:56] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:56] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:56] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:56] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:19:56] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:19:56] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:19:56] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:19:56] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:19:56] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:19:56] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:19:56] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:19:56] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:19:56] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:19:56] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:19:56] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:19:56] [INFO] Update progress: 2777088/29544608 bytes
+[2026-09-15 22:19:57] [INFO] Update progress: 2813952/29544608 bytes
+[2026-09-15 22:19:57] [INFO] Update progress: 2863104/29544608 bytes
+[2026-09-15 22:19:58] [INFO] Update progress: 2916352/29544608 bytes
+[2026-09-15 22:19:58] [INFO] Update progress: 2965504/29544608 bytes
+[2026-09-15 22:19:59] [INFO] Update progress: 3006464/29544608 bytes
+[2026-09-15 22:19:59] [INFO] Update progress: 3059712/29544608 bytes
+[2026-09-15 22:20:00] [INFO] Update progress: 3112960/29544608 bytes
+[2026-09-15 22:20:01] [INFO] Update progress: 3166208/29544608 bytes
+[2026-09-15 22:20:01] [INFO] Update progress: 3219456/29544608 bytes
+[2026-09-15 22:20:02] [INFO] Update progress: 3272704/29544608 bytes
+[2026-09-15 22:20:02] [INFO] Update progress: 3309568/29544608 bytes
+[2026-09-15 22:20:03] [INFO] Update progress: 3362816/29544608 bytes
+[2026-09-15 22:20:03] [INFO] Update progress: 3403776/29544608 bytes
+[2026-09-15 22:20:04] [INFO] Update progress: 3457024/29544608 bytes
+[2026-09-15 22:20:04] [INFO] Update progress: 3493888/29544608 bytes
+[2026-09-15 22:20:05] [INFO] Update progress: 3538944/29544608 bytes
+[2026-09-15 22:20:05] [INFO] Update progress: 3575808/29544608 bytes
+[2026-09-15 22:20:06] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:20:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:20:06] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:20:06] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:20:06] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:20:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:20:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:20:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:06] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:06] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:20:06] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:20:06] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:20:06] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:20:06] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:20:06] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:20:06] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:20:06] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:06] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:06] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:06] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:20:06] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:20:06] [INFO] Update progress: 3629056/29544608 bytes
+[2026-09-15 22:20:06] [INFO] Update progress: 3653632/29544608 bytes
+[2026-09-15 22:20:07] [INFO] Update progress: 3706880/29544608 bytes
+[2026-09-15 22:20:08] [INFO] Update progress: 3739648/29544608 bytes
+[2026-09-15 22:20:09] [INFO] Update progress: 3772416/29544608 bytes
+[2026-09-15 22:20:09] [INFO] Update progress: 3809280/29544608 bytes
+[2026-09-15 22:20:10] [INFO] Update progress: 3846144/29544608 bytes
+[2026-09-15 22:20:10] [INFO] Update progress: 3878912/29544608 bytes
+[2026-09-15 22:20:11] [INFO] Update progress: 3911680/29544608 bytes
+[2026-09-15 22:20:11] [INFO] Update progress: 3944448/29544608 bytes
+[2026-09-15 22:20:12] [INFO] Update progress: 3985408/29544608 bytes
+[2026-09-15 22:20:13] [INFO] Update progress: 4026368/29544608 bytes
+[2026-09-15 22:20:13] [INFO] Update progress: 4067328/29544608 bytes
+[2026-09-15 22:20:14] [INFO] Update progress: 4104192/29544608 bytes
+[2026-09-15 22:20:14] [INFO] Update progress: 4120576/29544608 bytes
+[2026-09-15 22:20:15] [INFO] Update progress: 4141056/29544608 bytes
+[2026-09-15 22:20:16] [INFO] Update progress: 4157440/29544608 bytes
+[2026-09-15 22:20:16] [INFO] Update progress: 4182016/29544608 bytes
+[2026-09-15 22:20:17] [INFO] Update progress: 4206592/29544608 bytes
+[2026-09-15 22:20:17] [INFO] Update progress: 4218880/29544608 bytes
+[2026-09-15 22:20:18] [INFO] Update progress: 4251648/29544608 bytes
+[2026-09-15 22:20:19] [INFO] Update progress: 4263936/29544608 bytes
+[2026-09-15 22:20:19] [INFO] Update progress: 4284416/29544608 bytes
+[2026-09-15 22:20:20] [INFO] Update progress: 4300800/29544608 bytes
+[2026-09-15 22:20:20] [INFO] Update progress: 4317184/29544608 bytes
+[2026-09-15 22:20:21] [INFO] Update progress: 4337664/29544608 bytes
+[2026-09-15 22:20:22] [INFO] Update progress: 4362240/29544608 bytes
+[2026-09-15 22:20:22] [INFO] Update progress: 4382720/29544608 bytes
+[2026-09-15 22:20:23] [INFO] Update progress: 4399104/29544608 bytes
+[2026-09-15 22:20:23] [INFO] Update progress: 4419584/29544608 bytes
+[2026-09-15 22:20:24] [INFO] Update progress: 4440064/29544608 bytes
+[2026-09-15 22:20:25] [INFO] Update progress: 4464640/29544608 bytes
+[2026-09-15 22:20:25] [INFO] Update progress: 4489216/29544608 bytes
+[2026-09-15 22:20:26] [INFO] Update progress: 4513792/29544608 bytes
+[2026-09-15 22:20:26] [INFO] Update progress: 4542464/29544608 bytes
+[2026-09-15 22:20:27] [INFO] Update progress: 4575232/29544608 bytes
+[2026-09-15 22:20:27] [INFO] Update progress: 4612096/29544608 bytes
+[2026-09-15 22:20:28] [INFO] Update progress: 4657152/29544608 bytes
+[2026-09-15 22:20:28] [INFO] Update progress: 4722688/29544608 bytes
+[2026-09-15 22:20:29] [INFO] Update progress: 4820992/29544608 bytes
+[2026-09-15 22:20:29] [INFO] Update progress: 4894720/29544608 bytes
+[2026-09-15 22:20:30] [INFO] Update progress: 5070848/29544608 bytes
+[2026-09-15 22:20:30] [INFO] Update progress: 5185536/29544608 bytes
+[2026-09-15 22:20:31] [INFO] Update progress: 5304320/29544608 bytes
+[2026-09-15 22:20:31] [INFO] Update progress: 5369856/29544608 bytes
+[2026-09-15 22:20:32] [INFO] Update progress: 5480448/29544608 bytes
+[2026-09-15 22:20:33] [INFO] Update progress: 5558272/29544608 bytes
+[2026-09-15 22:20:36] === MPV.Rocks Installer Log Started ===
+[2026-09-15 22:20:36] Timestamp: 2026-09-15T22:20:36+05:30
+[2026-09-15 22:20:36] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:20:36] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:20:36] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:20:36] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:20:36] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:20:36] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:20:36] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:20:36] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:20:36] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:36] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:36] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:36] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:20:37] [INFO] Initializing version check cache...
+[2026-09-15 22:20:37] [INFO] Detecting installed MPV apps...
+[2026-09-15 22:20:37] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-09-15 22:20:37] [DEBUG] [Detection] Detected package manager family: arch
+[2026-09-15 22:20:37] [DEBUG] [Detection] Flatpak not available
+[2026-09-15 22:20:37] [DEBUG] [Detection] Found MPV Package: 0.41.0-6.1
+[2026-09-15 22:20:37] [INFO] [Detection] Found 1 Package Manager apps
+[2026-09-15 22:20:37] [INFO] [Detection] Total detected apps: 1
+[2026-09-15 22:20:38] [INFO] Version check cache initialized with 1 updates and 1 package versions
+[2026-09-15 22:20:38] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-09-15 22:20:38] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-09-15 22:20:38] [INFO] Web server listening on 127.0.0.1:6787
+[2026-09-15 22:20:38] [INFO] Checking for manager updates...
+[2026-09-15 22:20:38] [INFO] Current version: 1.2.0, Latest version: 1.3.0
+[2026-09-15 22:20:39] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:20:39] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:20:39] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:20:39] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:20:39] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:20:39] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:20:39] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:20:39] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:39] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:39] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:39] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:39] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Detecting status...
+[2026-09-15 22:20:39] [DEBUG] Keyring: Detected distro=arch, desktopEnv=Hyprland
+[2026-09-15 22:20:39] [DEBUG] Keyring: Available backends: [kwallet secret-service file]
+[2026-09-15 22:20:39] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:20:39] [DEBUG] Keyring: No running process found matching 'kwalletd'
+[2026-09-15 22:20:39] [DEBUG] Keyring: checkDaemonRunning(kwallet) = false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Found running process 'gnome-keyring-d' (looking for 'gnome-keyring-d')
+[2026-09-15 22:20:39] [DEBUG] Keyring: checkDaemonRunning(secret-service) = true
+[2026-09-15 22:20:39] [DEBUG] Keyring: Active backend: secret-service, daemon running: true
+[2026-09-15 22:20:39] [DEBUG] Keyring: Trying SecretService backend
+[2026-09-15 22:20:39] [INFO] Keyring: Successfully opened backend: secret-service
+[2026-09-15 22:20:39] [DEBUG] Keyring: HasPassword check: false
+[2026-09-15 22:20:39] [DEBUG] Keyring: Status complete - hasPassword: false
+[2026-09-15 22:20:41] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:20:41] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:20:42] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:20:43] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:22:15] === MPV.Rocks Installer Log Started ===
+[2026-09-15 22:22:15] Timestamp: 2026-09-15T22:22:15+05:30
+[2026-09-15 22:22:15] [INFO] Config file saved to: /home/doormat/.config/mpv/mpv-manager.json
+[2026-09-15 22:22:15] [INFO] Migrated installed-app metadata
+[2026-09-15 22:22:15] [WARN] Could not recover an interrupted installer transaction: open installer transaction lock: open /usr/sbin/.mpv-manager-installer.lock: permission denied
+[2026-09-15 22:22:16] [DEBUG] vulkaninfo command failed: platform probe vulkaninfo failed: exec: "vulkaninfo": executable file not found in $PATH
+[2026-09-15 22:22:16] [DEBUG] [GPU] No codec database match found for GPU: "Intel Corporation TigerLake-H GT1 [UHD Graphics] [8086:9a68]" (brand: intel), using fallback
+[2026-09-15 22:22:16] [INFO] Refreshing version check cache...
+[2026-09-15 22:22:16] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-09-15 22:22:16] [DEBUG] [Detection] Detected package manager family: arch
+[2026-09-15 22:22:16] [DEBUG] [Detection] Flatpak not available
+[2026-09-15 22:22:16] [DEBUG] [Detection] Found MPV Package: 0.41.0-6.1
+[2026-09-15 22:22:16] [INFO] [Detection] Found 1 Package Manager apps
+[2026-09-15 22:22:16] [INFO] [Detection] Total detected apps: 1
+[2026-09-15 22:22:16] [INFO] [Detection] Adding newly detected app: MPV (mpv-package at /usr/bin/mpv)
+[2026-09-15 22:22:16] [INFO] Adding app to installed_apps: MPV
+[2026-09-15 22:22:16] [INFO] App type: app, Method: mpv-package, ID: app-3bdc315d7aaaa6f698f8512220b4b85c6b0ce0392603b4a8428d4fd8583a7bf3
+[2026-09-15 22:22:16] [INFO] Config file saved to: /home/doormat/.config/mpv/mpv-manager.json
+[2026-09-15 22:22:16] [INFO] Added 1 newly detected apps to config
+[2026-09-15 22:22:17] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-09-15 22:22:17] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-09-15 22:22:17] [INFO] Web server listening on 127.0.0.1:6787
+[2026-09-15 22:22:17] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-09-15 22:22:18] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:22:20] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:22:25] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:22:25] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:22:26] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:22:26] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:23:54] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:23:55] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:24:03] [INFO] mpv.conf not found, creating from embedded asset
+[2026-09-15 22:24:03] [INFO] Updated mpv.conf at: ~/.config/mpv/mpv.conf
+[2026-09-15 22:27:28] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:28] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:29] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:29] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:31] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:31] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:37] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:37] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:38] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:38] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:48] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:27:48] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-09-15 22:27:51] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-09-15 22:32:03] [INFO] [SSE] Client disconnected from job stream (total events: 0)

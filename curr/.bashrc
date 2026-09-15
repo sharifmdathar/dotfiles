@@ -56,3 +56,9 @@ RPS1="\t"
 #PS1_FILL='-'
 
 enable -f /usr/lib/bash/libflyline.so flyline
+
+export PATH="$HOME/.tokenharbor/bin:$PATH" # tokenharbor cli
+
+# >>> tokenharbor connect >>>
+[ -f "/home/doormat/.tokenharbor/env.sh" ] && . "/home/doormat/.tokenharbor/env.sh"
+# <<< tokenharbor connect <<<
