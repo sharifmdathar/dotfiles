@@ -23,7 +23,8 @@
       "installed_date": "2026-09-15",
       "app_version": "0.41.0-6.1",
       "update_available": false,
-      "managed": false
+      "ui_type": "uosc",
+      "managed": true
     }
   ],
   "manager_in_path": false,
@@ -34,6 +35,7 @@
   "modernz_version": "",
   "ffmpeg_version": "",
   "current_ui_type": "",
+  "installed_ui_type": "uosc",
   "create_manager_shortcut": false,
-  "hwa_decoder_preference": "nvdec,auto"
+  "hwa_decoder_preference": "nvdec,vaapi,auto"
 }

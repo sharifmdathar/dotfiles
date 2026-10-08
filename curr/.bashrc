@@ -62,3 +62,9 @@ export PATH="$HOME/.tokenharbor/bin:$PATH" # tokenharbor cli
 # >>> tokenharbor connect >>>
 [ -f "/home/doormat/.tokenharbor/env.sh" ] && . "/home/doormat/.tokenharbor/env.sh"
 # <<< tokenharbor connect <<<
+
+# opencode
+export PATH=/home/doormat/.opencode/bin:$PATH
+
+# Hermes Agent command
+case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="$HOME/.local/bin:$PATH" ;; esac
