@@ -21,7 +21,7 @@
       "install_method": "mpv-package",
       "install_path": "/usr/bin/mpv",
       "installed_date": "2026-09-15",
-      "app_version": "0.41.0-6.1",
+      "app_version": "0.41.0-6",
       "update_available": false,
       "ui_type": "uosc",
       "managed": true

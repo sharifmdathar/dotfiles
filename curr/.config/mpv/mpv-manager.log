@@ -1,0 +1,102 @@
+[2026-10-08 14:41:23] [INFO] Shutdown requested via Web UI
+[2026-10-08 14:41:23] [INFO] Shutting down HTTP server...
+[2026-10-08 14:41:23] [INFO] [SSE] Job stream closed for server shutdown
+[2026-10-08 14:41:23] === MPV.Rocks Installer Log Ended ===
+[2026-10-14 02:02:22] === MPV.Rocks Installer Log Started ===
+[2026-10-14 02:02:22] Timestamp: 2026-10-14T02:02:22+05:30
+[2026-10-14 02:02:22] [WARN] Could not recover an interrupted installer transaction: open installer transaction lock: open /usr/bin/.mpv-manager-installer.lock: permission denied
+open installer transaction lock: open /usr/sbin/.mpv-manager-installer.lock: permission denied
+[2026-10-14 02:02:25] [DEBUG] vulkaninfo command failed: platform probe vulkaninfo failed: exec: "vulkaninfo": executable file not found in $PATH
+[2026-10-14 02:02:25] [DEBUG] [GPU] No codec database match found for GPU: "Intel Corporation TigerLake-H GT1 [UHD Graphics] [8086:9a68]" (brand: intel), using fallback
+[2026-10-14 02:02:25] [INFO] Refreshing version check cache...
+[2026-10-14 02:02:25] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-10-14 02:02:25] [DEBUG] [Detection] Detected package manager family: arch
+[2026-10-14 02:02:25] [DEBUG] [Detection] Found MPV Package: 0.41.0-6
+[2026-10-14 02:02:26] [INFO] [Detection] Found 1 Package Manager apps
+[2026-10-14 02:02:26] [INFO] [Detection] Total detected apps: 1
+[2026-10-14 02:02:26] [INFO] [Detection] Updating version for mpv-package (app-3bdc315d7aaaa6f698f8512220b4b85c6b0ce0392603b4a8428d4fd8583a7bf3): 0.41.0-6.1 -> 0.41.0-6
+[2026-10-14 02:02:26] [INFO] Config file saved to: /home/doormat/.config/mpv/mpv-manager.json
+[2026-10-14 02:02:26] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-10-14 02:02:26] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-10-14 02:02:26] [INFO] Web server listening on 127.0.0.1:6787
+[2026-10-14 02:02:26] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-10-14 02:02:30] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-10-14 02:05:25] [INFO] [API] Checking for app updates...
+[2026-10-14 02:05:25] [INFO] Refreshing version check cache...
+[2026-10-14 02:05:25] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-10-14 02:05:25] [DEBUG] [Detection] Detected package manager family: arch
+[2026-10-14 02:05:25] [DEBUG] [Detection] Found MPV Package: 0.41.0-6
+[2026-10-14 02:05:25] [INFO] [Detection] Found 1 Package Manager apps
+[2026-10-14 02:05:25] [INFO] [Detection] Total detected apps: 1
+[2026-10-14 02:05:25] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-10-14 02:05:25] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-10-14 02:05:26] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-10-14 02:05:31] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-10-17 13:35:14] [INFO] Received shutdown signal
+[2026-10-17 13:35:14] [INFO] Shutting down HTTP server...
+[2026-10-17 13:35:14] === MPV.Rocks Installer Log Ended ===
+[2026-10-19 20:42:23] === MPV.Rocks Installer Log Started ===
+[2026-10-19 20:42:23] Timestamp: 2026-10-19T20:42:23+05:30
+[2026-10-19 20:42:23] [WARN] Could not recover an interrupted installer transaction: open installer transaction lock: open /usr/bin/.mpv-manager-installer.lock: permission denied
+open installer transaction lock: open /usr/sbin/.mpv-manager-installer.lock: permission denied
+[2026-10-19 20:42:23] [DEBUG] vulkaninfo command failed: platform probe vulkaninfo failed: exec: "vulkaninfo": executable file not found in $PATH
+[2026-10-19 20:42:23] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel(R) UHD Graphics (TGL GT1)" (brand: intel), using fallback
+[2026-10-19 20:42:23] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel(R) UHD Graphics" (brand: intel), using fallback
+[2026-10-19 20:42:24] [INFO] Refreshing version check cache...
+[2026-10-19 20:42:24] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-10-19 20:42:24] [DEBUG] [Detection] Detected package manager family: arch
+[2026-10-19 20:42:25] [DEBUG] [Detection] Found MPV Package: 0.41.0-6
+[2026-10-19 20:42:25] [INFO] [Detection] Found 1 Package Manager apps
+[2026-10-19 20:42:25] [INFO] [Detection] Total detected apps: 1
+[2026-10-19 20:42:25] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-10-19 20:42:25] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-10-19 20:42:25] [INFO] Web server listening on 127.0.0.1:6787
+[2026-10-19 20:42:25] [INFO] Browser opened automatically: http://127.0.0.1:6787
+[2026-10-19 20:42:26] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-10-19 20:42:34] [INFO] [API] Checking for app updates...
+[2026-10-19 20:42:34] [INFO] Refreshing version check cache...
+[2026-10-19 20:42:34] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-10-19 20:42:34] [DEBUG] [Detection] Detected package manager family: arch
+[2026-10-19 20:42:34] [DEBUG] [Detection] Found MPV Package: 0.41.0-6
+[2026-10-19 20:42:34] [INFO] [Detection] Found 1 Package Manager apps
+[2026-10-19 20:42:34] [INFO] [Detection] Total detected apps: 1
+[2026-10-19 20:42:34] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-10-19 20:42:34] [INFO] [SSE] Client disconnected from job stream (total events: 0)
+[2026-10-19 20:42:34] [INFO] [SSE] Client connected to job stream: job_id=
+[2026-10-19 20:43:00] [DEBUG] Keyring auth validation succeeded: stdout="", stderr="[sudo] password for doormat: "
+[2026-10-19 20:43:00] [INFO] [API]Password stored in keyring successfully
+[2026-10-19 20:43:01] [INFO] [API]Uninstall job request received: app_name=MPV, install_method=mpv-package
+[2026-10-19 20:43:01] [DEBUG] RunSudoCommand: Using password from keyring
+[2026-10-19 20:43:01] [DEBUG] cacheSudoCredentials: Validating sudo password
+[2026-10-19 20:43:01] [DEBUG] cacheSudoCredentials: Password validated, sudo timestamp refreshed
+[2026-10-19 20:43:01] [DEBUG] RunSudoCommand: Sudo credentials cached, running command
+[2026-10-19 20:43:01] [COMMAND] /usr/bin/sudo -n pacman -Rns --noconfirm mpv
+[2026-10-19 20:43:01] [ERROR-OUTPUT] sudo: a password is required
+[2026-10-19 20:43:01] [ERROR] Command failed: /usr/bin/sudo -n pacman -Rns --noconfirm mpv - Error: exit status 1
+[2026-10-19 20:43:01] [ERROR] [API]Uninstallation job failed: package remove failed: exit status 1
+[2026-10-19 20:43:04] [INFO] [API]Uninstall job request received: app_name=MPV, install_method=mpv-package
+[2026-10-19 20:43:04] [DEBUG] RunSudoCommand: Using password from keyring
+[2026-10-19 20:43:04] [DEBUG] cacheSudoCredentials: Validating sudo password
+[2026-10-19 20:43:04] [DEBUG] cacheSudoCredentials: Password validated, sudo timestamp refreshed
+[2026-10-19 20:43:04] [DEBUG] RunSudoCommand: Sudo credentials cached, running command
+[2026-10-19 20:43:04] [COMMAND] /usr/bin/sudo -n pacman -Rns --noconfirm mpv
+[2026-10-19 20:43:04] [ERROR-OUTPUT] sudo: a password is required
+[2026-10-19 20:43:04] [ERROR] Command failed: /usr/bin/sudo -n pacman -Rns --noconfirm mpv - Error: exit status 1
+[2026-10-19 20:43:04] [ERROR] [API]Uninstallation job failed: package remove failed: exit status 1
+[2026-10-19 20:43:15] [INFO] [SSE] Client disconnected from job stream (total events: 22)
+[2026-10-25 00:34:04] === MPV.Rocks Installer Log Started ===
+[2026-10-25 00:34:04] Timestamp: 2026-10-25T00:34:04+05:30
+[2026-10-25 00:34:04] [WARN] Could not recover an interrupted installer transaction: open installer transaction lock: open /usr/bin/.mpv-manager-installer.lock: permission denied
+open installer transaction lock: open /usr/sbin/.mpv-manager-installer.lock: permission denied
+[2026-10-25 00:34:04] [DEBUG] vulkaninfo command failed: platform probe vulkaninfo failed: exec: "vulkaninfo": executable file not found in $PATH
+[2026-10-25 00:34:04] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel(R) UHD Graphics (TGL GT1)" (brand: intel), using fallback
+[2026-10-25 00:34:04] [DEBUG] [GPU] No codec database match found for GPU: "Mesa Intel(R) UHD Graphics" (brand: intel), using fallback
+[2026-10-25 00:34:06] [INFO] Refreshing version check cache...
+[2026-10-25 00:34:06] [INFO] [Detection] Starting concurrent MPV app detection...
+[2026-10-25 00:34:06] [DEBUG] [Detection] Detected package manager family: arch
+[2026-10-25 00:34:06] [DEBUG] [Detection] Found MPV Package: 0.41.0-6
+[2026-10-25 00:34:06] [INFO] [Detection] Found 1 Package Manager apps
+[2026-10-25 00:34:06] [INFO] [Detection] Total detected apps: 1
+[2026-10-25 00:34:06] [INFO] Version check cache refreshed: 2 updates, 1 package versions
+[2026-10-25 00:34:06] [DEBUG] Desktop shortcut creation is disabled in settings
+[2026-10-25 00:34:06] === MPV.Rocks Installer Log Ended ===

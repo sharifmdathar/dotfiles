@@ -26,9 +26,12 @@ alias l="lazygit"
 . "$HOME/.local/share/../bin/env"
 
 # 1. Load Flyline (the installer should have added this, but just in case)
-if [[ -f "$HOME/.local/lib/libflyline.so" ]]; then
-    enable -f "$HOME/.local/lib/libflyline.so" flyline 2>/dev/null
-fi
+for lib in /usr/lib/bash/libflyline.so "$HOME/.local/lib/libflyline.so"; do
+    if [[ -f $lib ]]; then
+        enable -f "$lib" flyline
+        break
+    fi
+done
 
 # 2. Mouse mode: "smart" is the sweet spot — auto-disables on scroll,
 #    re-enables on keypress or focus. Toggle manually with Escape.
@@ -55,16 +58,21 @@ PS1="\u@\h:\w\$ "
 RPS1="\t"
 #PS1_FILL='-'
 
-enable -f /usr/lib/bash/libflyline.so flyline
-
 export PATH="$HOME/.tokenharbor/bin:$PATH" # tokenharbor cli
-
-# >>> tokenharbor connect >>>
-[ -f "/home/doormat/.tokenharbor/env.sh" ] && . "/home/doormat/.tokenharbor/env.sh"
-# <<< tokenharbor connect <<<
 
 # opencode
 export PATH=/home/doormat/.opencode/bin:$PATH
 
 # Hermes Agent command
 case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="$HOME/.local/bin:$PATH" ;; esac
+
+_hup() { nmcli con up hotspot; }
+_hdn() { nmcli con down hotspot; }
+_hst() {
+  iw dev wlp0s20f3 info
+  echo "--- leases ---"
+  sudo cat /var/lib/NetworkManager/dnsmasq-wlp0s20f3.leases 2>/dev/null || echo "(none)"
+}
+
+# Added by DevRelay installer
+export PATH="$HOME/.devrelay/bin:$PATH"
